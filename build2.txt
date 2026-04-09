@@ -1,0 +1,376 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for il.cshaifasweng.OCSFMediatorExample:server:jar:0.0.1-SNAPSHOT
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] OCSFMediatorExample                                                [pom]
+[INFO] entities                                                           [jar]
+[INFO] server                                                             [jar]
+[INFO] client                                                             [jar]
+[INFO] 
+[INFO] ----------------< il.cshaifasweng:OCSFMediatorExample >-----------------
+[INFO] Building OCSFMediatorExample 0.0.1-SNAPSHOT                        [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ OCSFMediatorExample ---
+[INFO] 
+[INFO] ------------< il.cshaifasweng.OCSFMediatorExample:entities >------------
+[INFO] Building entities 0.0.1-SNAPSHOT                                   [2/4]
+[INFO]   from entities\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:22-ea+11 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ entities ---
+[INFO] Deleting C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\target
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ entities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ entities ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\target\classes
+[INFO] 
+[INFO] -------------< il.cshaifasweng.OCSFMediatorExample:server >-------------
+[INFO] Building server 0.0.1-SNAPSHOT                                     [3/4]
+[INFO]   from server\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ server ---
+[INFO] Deleting C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 37 source files to C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target\classes
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/ocsf/ConnectionToClient.java: C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\src\main\java\il\cshaifasweng\OCSFMediatorExample\server\ocsf\ConnectionToClient.java uses or overrides a deprecated API that is marked for removal.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/ocsf/ConnectionToClient.java: Recompile with -Xlint:removal for details.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Recompile with -Xlint:unchecked for details.
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[31,40] net.bytebuddy.utility.FileSystem.ForNio2CapableVm has protected access in net.bytebuddy.utility.FileSystem
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[73,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[75,21] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[100,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[102,25] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[123,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[125,24] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[150,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[152,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[152,35] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[155,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[185,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[187,22] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[188,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[193,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[198,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[203,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[208,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[211,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[215,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[220,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[225,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[229,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[234,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[238,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[243,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[247,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[251,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[255,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[260,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[264,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[269,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[274,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[296,26] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[302,51] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[304,13] cannot find symbol
+  symbol:   class Path
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[304,40] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[307,26] cannot find symbol
+  symbol:   method exists()
+  location: variable imageFile of type com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[308,24] cannot find symbol
+  symbol:   variable Files
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[308,52] cannot find symbol
+  symbol:   method toPath()
+  location: variable imageFile of type com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[321,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[323,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[331,29] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[350,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[352,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[376,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[392,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[394,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[395,13] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[406,30] cannot find symbol
+  symbol:   variable List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[433,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[438,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[444,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[445,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[446,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[526,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[532,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[538,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[539,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[541,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[549,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[561,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[573,9] cannot find symbol
+  symbol:   class List
+  location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[617,25] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[INFO] 64 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for OCSFMediatorExample 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] OCSFMediatorExample ................................ SUCCESS [  0.368 s]
+[INFO] entities ........................................... SUCCESS [  2.950 s]
+[INFO] server ............................................. FAILURE [  1.537 s]
+[INFO] client ............................................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.022 s
+[INFO] Finished at: 2026-03-28T02:42:42+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:compile (default-compile) on project server: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[31,40] net.bytebuddy.utility.FileSystem.ForNio2CapableVm has protected access in net.bytebuddy.utility.FileSystem
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[73,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[75,21] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[100,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[102,25] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[123,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[125,24] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[150,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[152,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[152,35] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[155,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[185,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[187,22] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[188,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[193,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[198,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[203,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[208,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[211,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[215,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[220,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[225,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[229,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[234,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[238,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[243,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[247,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[251,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[255,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[260,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[264,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[269,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[274,33] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[296,26] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[302,51] incompatible types: java.lang.String cannot be converted to com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[304,13] cannot find symbol
+[ERROR]   symbol:   class Path
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[304,40] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[307,26] cannot find symbol
+[ERROR]   symbol:   method exists()
+[ERROR]   location: variable imageFile of type com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[308,24] cannot find symbol
+[ERROR]   symbol:   variable Files
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[308,52] cannot find symbol
+[ERROR]   symbol:   method toPath()
+[ERROR]   location: variable imageFile of type com.google.protobuf.compiler.PluginProtos.CodeGeneratorResponse.File
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[321,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[323,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[331,29] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[350,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[352,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[376,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[392,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[394,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[395,13] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[406,30] cannot find symbol
+[ERROR]   symbol:   variable List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[433,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[438,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[444,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[445,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[446,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[526,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[532,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[538,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[539,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[541,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[549,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[561,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[573,9] cannot find symbol
+[ERROR]   symbol:   class List
+[ERROR]   location: class il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[ERROR] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/GenerateDB.java:[617,25] incompatible types: com.mysql.cj.x.protobuf.MysqlxDatatypes.Scalar.String cannot be converted to java.lang.String
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :server

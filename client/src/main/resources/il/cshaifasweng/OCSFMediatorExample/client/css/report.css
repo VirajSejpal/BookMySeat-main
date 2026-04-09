@@ -1,0 +1,38 @@
+.report-tab-pane {
+    -fx-border-color: transparent;
+    -fx-background-color: #f0f4f8;
+    -fx-padding: 15px;
+    -fx-background-radius: 10px;
+}
+
+.report-tab-pane .tab-header-area {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+.report-tab-pane .tab {
+    -fx-background-color: linear-gradient(to bottom, #0073e6, #005bb5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 15px 15px 0 0;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.2, 0, 5);
+}
+
+.report-tab-pane .tab:hover {
+    -fx-background-color: linear-gradient(to bottom, #005bb5, #003f87);
+}
+
+.report-tab-pane .tab:selected {
+    -fx-background-color: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.2, 0, 5);
+}
+
+.report-tab-pane .tab-label {
+    -fx-font-size: 15px;
+    -fx-text-fill: inherit;
+}

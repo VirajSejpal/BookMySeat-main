@@ -1,0 +1,96 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for il.cshaifasweng.OCSFMediatorExample:server:jar:0.0.1-SNAPSHOT
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] OCSFMediatorExample                                                [pom]
+[INFO] entities                                                           [jar]
+[INFO] server                                                             [jar]
+[INFO] client                                                             [jar]
+[INFO] 
+[INFO] ----------------< il.cshaifasweng:OCSFMediatorExample >-----------------
+[INFO] Building OCSFMediatorExample 0.0.1-SNAPSHOT                        [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ OCSFMediatorExample ---
+[INFO] 
+[INFO] ------------< il.cshaifasweng.OCSFMediatorExample:entities >------------
+[INFO] Building entities 0.0.1-SNAPSHOT                                   [2/4]
+[INFO]   from entities\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:22-ea+11 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ entities ---
+[INFO] Deleting C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\target
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ entities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ entities ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\target\classes
+[INFO] 
+[INFO] -------------< il.cshaifasweng.OCSFMediatorExample:server >-------------
+[INFO] Building server 0.0.1-SNAPSHOT                                     [3/4]
+[INFO]   from server\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ server ---
+[INFO] Deleting C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 37 source files to C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target\classes
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Some input files use or override a deprecated API.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/ocsf/ConnectionToClient.java: C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\src\main\java\il\cshaifasweng\OCSFMediatorExample\server\ocsf\ConnectionToClient.java uses or overrides a deprecated API that is marked for removal.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/ocsf/ConnectionToClient.java: Recompile with -Xlint:removal for details.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/server/src/main/java/il/cshaifasweng/OCSFMediatorExample/server/handlers/PurchaseHandler.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] -------------< il.cshaifasweng.OCSFMediatorExample:client >-------------
+[INFO] Building client 0.0.1-SNAPSHOT                                     [4/4]
+[INFO]   from client\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-base:jar:22 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ client ---
+[INFO] Deleting C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\target
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 90 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 53 source files to C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\target\classes
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/client/src/main/java/il/cshaifasweng/OCSFMediatorExample/client/ocsf/ObservableClient.java: C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\src\main\java\il\cshaifasweng\OCSFMediatorExample\client\ocsf\ObservableClient.java uses or overrides a deprecated API.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/client/src/main/java/il/cshaifasweng/OCSFMediatorExample/client/ocsf/ObservableClient.java: Recompile with -Xlint:deprecation for details.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/client/src/main/java/il/cshaifasweng/OCSFMediatorExample/client/ocsf/ObservableSWRClient.java: Some input files use unchecked or unsafe operations.
+[INFO] /C:/Users/viraj/OneDrive/Desktop/Hasertia_Project-main/client/src/main/java/il/cshaifasweng/OCSFMediatorExample/client/ocsf/ObservableSWRClient.java: Recompile with -Xlint:unchecked for details.
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for OCSFMediatorExample 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] OCSFMediatorExample ................................ SUCCESS [  0.571 s]
+[INFO] entities ........................................... SUCCESS [  4.074 s]
+[INFO] server ............................................. SUCCESS [  2.374 s]
+[INFO] client ............................................. SUCCESS [  4.450 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.707 s
+[INFO] Finished at: 2026-03-28T02:44:20+05:30
+[INFO] ------------------------------------------------------------------------

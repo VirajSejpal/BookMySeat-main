@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="containerAddProduct" prefHeight="581.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-width: 2px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.contentManager.DialogEditMovie">
+    <children>
+        <GridPane alignment="CENTER" hgap="20.0" layoutX="7.0" layoutY="10.0" prefHeight="539.0" prefWidth="583.0" vgap="20.0">
+            <!-- Title -->
+            <Label fx:id="txtAddProduct" alignment="CENTER" text="Update Movie" textFill="#3a1c9d" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+
+            <!-- Row 1: English Name -->
+            <TextField fx:id="txtEnglishName" prefWidth="220.0" promptText="English Name" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextField>
+
+            <!-- Row 2: Hindi Name -->
+            <TextField fx:id="txtHebrewName" prefWidth="220.0" promptText="Hindi Name" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextField>
+         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0" GridPane.rowIndex="3">
+            <children>
+
+                  <!-- Row 3: Producer -->
+                  <TextField fx:id="txtProducer" prefWidth="220.0" promptText="Producer" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;">
+                      <font>
+                          <Font size="14.0" />
+                      </font>
+                  </TextField>
+                    <TextField fx:id="txtDuration" promptText="Duration" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </TextField>
+            </children>
+         </HBox>
+
+            <!-- Row 4: Genre (ComboBox) -->
+            <ComboBox fx:id="comboGenre" prefHeight="27.0" prefWidth="220.0" promptText="Select Genre" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.columnIndex="0" GridPane.rowIndex="4">
+
+            </ComboBox>
+              <ComboBox fx:id="comboType" prefHeight="27.0" prefWidth="220.0" promptText="Select Type" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.rowIndex="6">
+                    </ComboBox>
+
+            <!-- Row 6: Actors -->
+            <TextField fx:id="txtActors" prefWidth="220.0" promptText="Actors" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.rowIndex="7">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextField>
+
+            <!-- Row 7: Prices -->
+            <HBox alignment="CENTER_LEFT" prefHeight="31.0" spacing="20.0" GridPane.rowIndex="8">
+                <children>
+                    <TextField fx:id="txtHVPrice" promptText="Home Viewing Price" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </TextField>
+                    <TextField fx:id="txtTheaterPrice" promptText="Theater Price" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;">
+                        <font>
+                            <Font size="14.0" />
+                        </font>
+                    </TextField>
+                </children>
+            </HBox>
+
+            <!-- Row 8: Description -->
+            <TextArea fx:id="txtDescription" prefHeight="52.0" prefWidth="325.0" promptText="Description" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.rowIndex="9">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextArea>
+
+            <!-- Row 9: Image -->
+            <VBox fx:id="imageContainer" alignment="CENTER" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="8">
+                <Pane fx:id="paneContainer">
+                    <children>
+                        <ImageView fx:id="imageProduct" fitHeight="300.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../../../../../../../../server/movies/empty-image.jpg" />
+                            </image>
+                        </ImageView>
+                    </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+                </Pane>
+                <Label fx:id="lblPathImage" text="No Image" />
+            </VBox>
+
+            <!-- Row 10: Buttons -->
+            <HBox alignment="CENTER" spacing="10.0" GridPane.columnSpan="2" GridPane.rowIndex="10">
+                <children>
+                    <Button fx:id="btnSave" onAction="#handleSave" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #3a1c9d;" styleClass="action-button" text="Save" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="btnCancel" onAction="#handleClose" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #3a1c9d; -fx-text-fill: #FFFFFF;" styleClass="button-cancel" text="Cancel">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Button>
+                </children>
+            </HBox>
+              <ComboBox fx:id="comboAvailable" prefHeight="27.0" prefWidth="220.0" promptText="Availability" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-radius: 5px;" GridPane.rowIndex="5">
+                    </ComboBox>
+
+            <columnConstraints>
+                <ColumnConstraints maxWidth="360.0" minWidth="316.0" prefWidth="328.0" />
+                <ColumnConstraints maxWidth="244.0" minWidth="200.0" prefWidth="232.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+             <RowConstraints maxHeight="70.0" minHeight="52.0" prefHeight="70.0" />
+            <RowConstraints maxHeight="20.0" minHeight="2.0" prefHeight="2.0" />
+             </rowConstraints>
+        </GridPane>
+
+        <Button fx:id="btnClose" layoutX="565.0" layoutY="10.0" onAction="#handleClose" prefHeight="35.0" prefWidth="35.0" styleClass="button-close" text=" ">
+            <graphic>
+                <Text fill="#3a1c9d" style="-fx-font-size: 20px;" text="X" />
+            </graphic>
+        </Button>
+    </children>
+</AnchorPane>

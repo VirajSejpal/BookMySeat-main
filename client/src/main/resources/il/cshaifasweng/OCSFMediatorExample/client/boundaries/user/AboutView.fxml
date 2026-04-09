@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane id="aboutPane" fx:id="aboutPane" prefHeight="800" prefWidth="1000" stylesheets="@../../css/about.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.user.AboutBoundary">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true">
+         <StackPane fx:id="stackPane">
+            <!-- About Details Pane -->
+            <VBox id="about-content-pane" alignment="TOP_CENTER" spacing="20">
+               <Label id="about-section-title" text="BOOKMYSEAT: The Movie Library" />
+               <VBox id="about-package-container" alignment="CENTER" maxWidth="600.0" prefHeight="350.0" prefWidth="600.0" spacing="15">
+                  <HBox alignment="CENTER" spacing="20">
+                     <!-- GridPane for Key Features -->
+                     <GridPane id="about-features-grid" hgap="10" maxWidth="280.0" vgap="8">
+                        <Label id="about-label" text="Key Features:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Text id="about-text" text="• Movie Listings: Browse movies with detailed information." GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Text id="about-text" text="• Ticket Purchase: Interactive seat selection and payment." GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <Text id="about-text" text="• Home Viewing Links: Convenient at-home access to selected films." GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <Text id="about-text" text="• Multi-Entry Tickets: Discounted access to multiple screenings." GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                        <Text id="about-text" text="• Customer Service: Efficient handling of complaints and refunds." GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                        <columnConstraints>
+                           <ColumnConstraints />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                        </rowConstraints>
+                     </GridPane>
+
+                     <!-- GridPane for Technology Stack -->
+                     <GridPane id="about-tech-grid" hgap="10" maxWidth="280.0" vgap="8">
+                        <Label id="about-label" text="Technology Stack:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Text id="about-text" text="• JavaFX: Dynamic and responsive client interface." GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <Text id="about-text" text="• OCSF: Reliable client-server communication." GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <Text id="about-text" text="• MySQL: Robust relational database management." GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                        <columnConstraints>
+                           <ColumnConstraints />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                        </rowConstraints>
+                     </GridPane>
+                  </HBox>
+               </VBox>
+               <Label id="about-developer" text="Developed by: Viraj Sejpal" />
+            </VBox>
+         </StackPane>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,342 @@
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 16;
+    -fx-padding: 1px 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.25), 5, 0, 0, 5);
+
+}
+
+.button:hover {
+    -fx-background-color: white;
+}
+
+.button:pressed {
+    -fx-background-color: #4A86FF;
+}
+
+.button-close {
+    -fx-background-color: none;
+    -fx-fill: #212328;
+}
+
+.button-book {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f35f56;
+    -fx-text-fill: white;
+}
+
+.button-info {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #4A86FF;
+    -fx-text-fill: white;
+}
+
+.button-close {
+}
+
+.button-close:hover  {
+    -fx-fill: black;
+}
+
+
+.button-no {
+    -fx-pref-height: 15px;
+    -fx-background-color:  #f35f56;
+    -fx-text-fill: white;
+}
+
+.button-yes {
+    -fx-pref-height: 15px;
+    -fx-background-color: #6681e8;
+    -fx-text-fill: white;
+}
+
+.button-cancel {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 12;
+    -fx-background-color: white;
+    -fx-border-color:  #212328;
+    -fx-text-fill:  #212328;
+}
+
+
+
+.button-delete {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f35f56;
+    -fx-text-fill: white;
+}
+
+
+
+.button-blue {
+    -fx-background-color: #1E90FF;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-blue:hover {
+    -fx-background-color: #1E90FF;
+}
+
+.button-blue:pressed {
+    -fx-background-color: #1E90FF;
+}
+
+
+
+.button-green:hover {
+    -fx-background-color: #32CD32;
+    -fx-text-fill: white;
+}
+
+.button-green:pressed {
+    -fx-background-color: #32CD32;
+}
+
+
+.button-green {
+    -fx-background-color: #32CD32;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+
+.button-green:hover {
+    -fx-background-color: #32CD32;
+    -fx-text-fill: white;
+}
+
+.button-green:pressed {
+    -fx-background-color: #32CD32;
+}
+
+.button-green-active {
+    -fx-background-color: #32CD32;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: hand;
+}
+
+
+.button-green-active:hover {
+    -fx-background-color: #32CD32;
+    -fx-text-fill: white;
+
+}
+
+.button-green-active:pressed {
+    -fx-background-color: #32CD32;
+}
+
+.button-blue-active {
+    -fx-background-color: #6681e8;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: hand;
+}
+
+
+.button-blue-active:hover {
+    -fx-background-color: #6681e8;
+    -fx-text-fill: white;
+
+}
+
+.button-blue-active:pressed {
+    -fx-background-color: #6681e8;
+}
+
+
+.button-purple {
+    -fx-background-color: #6A5ACD;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-purple:hover {
+    -fx-background-color: #6A5ACD;
+}
+
+.button-purple:pressed {
+    -fx-background-color: #6A5ACD;
+}
+
+
+
+.button-red {
+    -fx-background-color: #DC143C;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-red:hover {
+    -fx-background-color: #DC143C;
+    -fx-text-fill: white;
+
+}
+
+.button-red:pressed {
+    -fx-background-color: #DC143C;
+}
+
+
+
+.button-pink {
+    -fx-background-color: #FF69B4;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-pink:hover {
+    -fx-background-color: #FF69B4;
+}
+
+.button-pink:pressed {
+    -fx-background-color: #FF69B4;
+}
+
+
+
+.button-blue {
+    -fx-background-color: #00CED1;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-blue:hover {
+    -fx-background-color: #00CED1;
+}
+
+.button-blue:pressed {
+    -fx-background-color: #00CED1;
+}
+
+
+.button-tomato{
+    -fx-background-color: #FF6347;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+
+.button-tomato:hover {
+    -fx-background-color: #FF6347;
+}
+
+.button-tomato:pressed {
+    -fx-background-color: #FF6347;
+}
+
+.button-orange {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+}
+.button-orange:hover {
+    -fx-background-color: #ffc107;
+}
+
+.button-orange:pressed {
+    -fx-background-color: #ffc107;
+}
+
+
+
+.button-light-purple {
+    -fx-background-color: #9370DB;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+
+}
+.button-light-purple:hover {
+    -fx-background-color: #9370DB;
+}
+
+.button-light-purple:pressed {
+    -fx-background-color: #9370DB;
+}
+
+.button-hot-pink {
+    -fx-background-color: #FF1493;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+
+}
+.button-hot-pink:hover {
+    -fx-background-color: #FF1493;
+}
+
+.button-hot-pink:pressed {
+    -fx-background-color: #FF1493;
+}
+
+.button-deep-purple {
+    -fx-background-color: #8A2BE2;
+    -fx-text-fill: white;
+    -fx-pref-width: 160px;
+    -fx-cursor: default;
+
+
+}
+.button-deep-purple:hover {
+    -fx-background-color: #8A2BE2;
+}
+
+.button-deep-purple:pressed {
+    -fx-background-color: #8A2BE2;
+}
+
+
+
+.button-default {
+    -fx-background-color: #6681e8;
+    -fx-text-fill: white;
+    -fx-pref-width: 200px;
+    -fx-cursor: default;
+
+}
+.button-default:hover {
+    -fx-background-color: #6681e8;
+}
+
+.button-default:pressed {
+    -fx-background-color: #6681e8;
+}
+
+.button-gray {
+    -fx-background-color: #474545;
+    -fx-text-fill: white;
+    -fx-pref-width: 200px;
+    -fx-cursor: default;
+
+}
+.button-gray:hover {
+    -fx-background-color: #474545;
+}
+
+.button-gray:pressed {
+    -fx-background-color: #474545;
+}
+
+.label-hover-effect {
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.label-hover-effect:hover {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,30 @@
+/* Unique styles for the custom context menu */
+.custom-context-menu {
+    -fx-background-color: white;
+    -fx-border-color: #d1d1d1;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-min-width: 150px;
+    -fx-max-width: 300px;
+}
+
+/* Unique styles for the context menu items */
+.custom-context-item {
+    -fx-text-fill: #212328;
+    -fx-font-size: 15;
+    -fx-padding: 5 10;
+    -fx-pref-width: -1;
+    -fx-wrap-text: true;
+}
+
+.custom-context-item:hover,
+.custom-context-item:pressed {
+    -fx-background-color: #6681e8;
+    -fx-text-fill: white;
+}
+
+/* Ensure no unintended overriding styles */
+.custom-context-item:focused {
+    -fx-background-color: #2a2a5e;
+    -fx-text-fill: #cae8fb;
+}

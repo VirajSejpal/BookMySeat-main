@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pnEmployeeArea" prefHeight="499.0" prefWidth="759.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-width: 2px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.customerService.DialogCustomerService">
+   <children>
+      <VBox alignment="CENTER" layoutX="3.0" layoutY="6.0" prefHeight="488.0" prefWidth="751.0" spacing="5.0" style="-fx-background-color: #FFFFFF; -fx-padding: 15;">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="450.0">
+               <children>
+                  <Label fx:id="purchaseTypeField" prefHeight="27.0" prefWidth="252.0" style="-fx-text-fill: #4d4c4c; -fx-font-size: 18;" text="Employee - Handle Purchase">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#closeEmployeeArea" prefHeight="24.0" prefWidth="37.0" style="-fx-background-color: transparent; -fx-text-fill: #4d4c4c;" text="x" textAlignment="RIGHT">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+
+            <GridPane hgap="10" vgap="5">
+               <children>
+                  <Label text="Number of Tickets:" textFill="#4d4c4c" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <Label fx:id="numTicketsLabel" text="N/A" textFill="#3a1c9d" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                  <Label text="Complaint Details:" textFill="#4d4c4c" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <Label fx:id="complaintDetailsLabel" text="N/A" textFill="#3a1c9d" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                  <Label text="Movie Name:" textFill="#4d4c4c" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <Label fx:id="movieNameLabel" text="N/A" textFill="#3a1c9d" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                  <Label text="Viewing Date:" textFill="#4d4c4c" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <Label fx:id="viewingDateLabel" text="N/A" textFill="#3a1c9d" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                  <Label text="Complainant Name:" textFill="#4d4c4c" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <Label fx:id="complainantNameLabel" text="N/A" textFill="#3a1c9d" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+            </GridPane>
+
+            <Separator style="-fx-background-color: #4d4c4c;" />
+
+            <VBox prefHeight="289.0" prefWidth="721.0" spacing="10.0">
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Select Action:" textFill="#4d4c4c" />
+                        <ComboBox fx:id="actionComboBox" onAction="#handleActionSelection" prefHeight="27.0" style="-fx-pref-width: 250; -fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="No refund" />
+                                 <String fx:value="Compensate Financially" />
+                              </FXCollections>
+                           </items>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Employee Response:" textFill="#4d4c4c" />
+                        <ComboBox fx:id="employeeResponseComboBox" prefHeight="27.0" prefWidth="458.0" style="-fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;">
+                           <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                 <String fx:value="Your refund has been processed successfully." />
+                                 <String fx:value="We apologize for the mistake. Compensation has been issued." />
+                                 <String fx:value="We apologize for the inconvenience. Compensation is on its way." />
+                                 <String fx:value="The double charge has been refunded. Thank you for your patience." />
+                                 <String fx:value="We are sorry about the movie quality. Compensation has been processed." />
+                                 <String fx:value="We apologize for the noise. Compensation has been issued." />
+                                 <String fx:value="Thank you for your feedback. We're always working to improve our service." />
+                                 <String fx:value="We appreciate your patience as we resolve this issue." />
+                                 <String fx:value="Your suggestions have been forwarded to our development team." />
+                                 <String fx:value="We are currently looking into this matter. Thank you for bringing it to our attention." />
+                                 <String fx:value="Your concern has been noted, and we are working on a solution." />
+                                 <String fx:value="Thank you for reporting this issue. We are investigating it thoroughly." />
+                                 <String fx:value="We apologize for the inconvenience. Your case has been escalated to a higher level of support." />
+                                 <String fx:value="Thank you for your understanding as we work to improve our services." />
+                              </FXCollections>
+                           </items>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+
+                  <VBox fx:id="compensateFinanciallyBox" managed="false" spacing="10.0" visible="false">
+                     <HBox spacing="10.0">
+                        <children>
+                           <Label text="Refund Amount:" textFill="#4d4c4c" />
+                           <TextField fx:id="refundAmountField" promptText="Enter amount" style="-fx-pref-width: 100; -fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;" />
+                        </children>
+                     </HBox>
+                  </VBox>
+
+                  <Separator style="-fx-background-color: #4d4c4c;" />
+
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Response:" textFill="#4d4c4c" />
+                        <ScrollPane fx:id="finalResponseScrollPane" prefHeight="135.0" prefWidth="586.0" style="-fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;">
+                           <content>
+                              <TextFlow fx:id="finalResponsePreviewArea" prefHeight="133.0" prefWidth="583.0" style="" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+
+                  <Button fx:id="btnSend" onAction="#handleSubmitFinalResponse" style="-fx-background-color: #3a1c9d; -fx-font-size: 16; -fx-text-fill: #FFFFFF;" text="Send Response" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

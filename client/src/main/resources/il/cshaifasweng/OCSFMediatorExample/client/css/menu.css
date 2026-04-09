@@ -1,0 +1,147 @@
+
+.home-menu-button {
+    -fx-background-color: linear-gradient(to bottom, #2a2a5e, #1d1d48);
+    -fx-text-fill: #cae8fb;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-padding: 10 20;
+    -fx-border-color: #3e3e7a;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-radius: 4;
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-effect: null;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.home-menu-button:hover {
+    -fx-text-fill: #dc2742;
+    -fx-background-color: linear-gradient(to bottom, #3a3a7a, #2a2a5e);
+    -fx-border-color: #dc2742;
+}
+
+.home-menu-button:pressed {
+    -fx-text-fill: white;
+    -fx-background-color: #dc2742;
+    -fx-border-color: #dc2742;
+}
+
+.home-menu-button.selected {
+    -fx-text-fill: white;
+    -fx-background-color: #dc2742;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-border-color: #dc2742;
+}
+
+
+
+ .home-filter-box {
+     -fx-background-color: rgba(42, 42, 94, 0.9);
+     -fx-padding: 5 10;
+     -fx-prompt-text-fill: #cae8fb;
+     -fx-border-radius: 10;
+     -fx-background-radius: 10;
+     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 8, 0, 0, 4);
+ }
+
+ .home-filter-combo {
+     -fx-font-size: 14px;
+     -fx-background-color: white;
+     -fx-border-color: #3e3e7a;
+     -fx-border-radius: 6;
+     -fx-background-radius: 6;
+ }
+
+
+.custom-date-picker {
+    -fx-font-size: 14px;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-color: rgba(42, 42, 94, 0.9);
+}
+
+.custom-date-picker:hover {
+    -fx-border-color: rgba(42, 42, 94, 0.9);
+}
+
+.custom-date-picker .arrow-button {
+    -fx-background-color: rgba(42, 42, 94, 0.9);
+    -fx-background-radius: 0;
+}
+
+.custom-date-picker .arrow-button:hover {
+    -fx-background-color: rgba(42, 42, 94, 0.9);
+}
+
+.custom-date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+.custom-date-picker .cell {
+    -fx-background-color: white;
+}
+
+.custom-date-picker .cell:hover {
+    -fx-background-color: #d1d1d1;
+}
+
+.custom-date-picker .cell:focused {
+    -fx-background-color: #d1d1d1;
+}
+
+.custom-date-picker .selected {
+    -fx-background-color: rgba(42, 42, 94, 0.9);
+    -fx-text-fill: white;
+}
+
+.custom-date-picker .selected:focused {
+    -fx-background-color: rgba(42, 42, 94, 0.9);
+    -fx-text-fill: white;
+}
+
+.custom-date-picker-popup {
+    -fx-border-color: transparent;
+}
+
+.custom-date-picker-popup .month-year-pane {
+    -fx-background-color: rgba(42, 42, 94, 0.9);
+}
+
+.custom-date-picker-popup .month-year-pane .label {
+    -fx-text-fill: white;
+}
+
+.custom-date-picker-popup .week-number-cell {
+    -fx-text-fill: rgba(42, 42, 94, 0.9);
+}
+
+.custom-date-picker-popup .spinner .button .left-arrow,
+.custom-date-picker-popup .spinner .button .right-arrow {
+    -fx-background-color: white;
+}
+
+
+.home-filter-reset-button {
+    -fx-background-color: linear-gradient(to bottom, #dc2742, #dc2742);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 18;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-border-color: #dc2742;
+}
+
+.home-filter-reset-button:hover {
+    -fx-text-fill: #cae8fb;
+    -fx-background-color: linear-gradient(to bottom, #dc2742, #dc2742);
+    -fx-border-color: #dc2742;
+}
+
+.home-filter-reset-button:pressed {
+    -fx-text-fill: #cae8fb;
+    -fx-background-color: #dc2742;
+    -fx-border-color: #dc2742;
+}

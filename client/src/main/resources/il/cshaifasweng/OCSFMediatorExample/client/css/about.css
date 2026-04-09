@@ -1,0 +1,81 @@
+/* Apply styles only to the about page */
+#aboutPane {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+#about-content-pane {
+    -fx-padding: 20px;
+    -fx-background-color: #cae8fb;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+#about-section-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+    -fx-padding-bottom: 15px;
+}
+
+#about-package-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 15px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+#about-features-grid, #about-tech-grid {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 15px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+}
+
+#about-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #2b2d42;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #e0e0e0, #f7f7f7);
+    -fx-padding: 5px 8px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+#about-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #3a3a3a;
+    -fx-padding: 3px 0;
+    -fx-line-spacing: 1.3em;
+}
+
+#about-developer {
+    -fx-font-size: 22px;
+    -fx-text-fill: #2b2d42;
+    -fx-font-style: italic;
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0, 0, 2);
+    -fx-padding: 3px;
+    -fx-background-radius: 8px;
+}
+
+/* Add hand cursor for GitHub image only */
+#github {
+    -fx-cursor: hand;
+}
+
+.separator {
+    -fx-background-color: #4d4c4c;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}

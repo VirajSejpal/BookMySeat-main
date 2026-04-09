@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="899.0" stylesheets="@../../css/report.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.reports.ReportsBoundary">
+   <children>
+      <AnchorPane fx:id="rootStatistics" prefHeight="624.0" prefWidth="1014.0" styleClass="date-picker" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane prefHeight="545.0" prefWidth="957.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="1000.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <padding>
+                        <Insets bottom="10.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="h1" text="REPORTS">
+                           <font>
+                              <Font name="System Bold" size="35.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox fx:id="vbox" prefHeight="552.0" prefWidth="962.0" spacing="20" BorderPane.alignment="CENTER">
+                     <children>
+                        <TabPane fx:id="tabPane" prefHeight="495.0" prefWidth="882.0" style="-fx-background-color: white;" styleClass="report-tab-pane" tabClosingPolicy="ALL_TABS" VBox.vgrow="ALWAYS">
+                           <tabs>
+                              <!-- Ticket Sales Report Tab -->
+                              <Tab closable="false" text="Ticket Sales">
+                                 <AnchorPane>
+                                    <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="TicketSalesyearComboBox"  />
+                                          <ComboBox fx:id="TicketSalesmonthComboBox"  />
+                                       </children>
+                                    </HBox>
+                                    <BarChart fx:id="ticketSalesBarChart" layoutY="50.0" prefHeight="322.0" prefWidth="813.0" title="Ticket Sales" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="50.0">
+                                       <xAxis>
+                                          <CategoryAxis label="Days in Month" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Sales" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </AnchorPane>
+                              </Tab>
+                              <!-- Package Sales Report Tab -->
+                              <Tab closable="false" text="Package Sales">
+                                 <AnchorPane>
+                                    <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="PackageSalesyearComboBox" />
+                                          <ComboBox fx:id="PackageSalesmonthComboBox"  />
+                                       </children>
+                                    </HBox>
+                                    <BarChart fx:id="packageSalesBarChart" layoutY="50.0" prefHeight="405.0" prefWidth="940.0" title="Package Sales" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                       <xAxis>
+                                          <CategoryAxis label="Days in Month" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Sales" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </AnchorPane>
+                              </Tab>
+                              <!-- Multi-Entry Ticket Sales Report Tab -->
+                              <Tab closable="false" text="Multi-Entry Ticket Sales">
+                                 <AnchorPane>
+                                    <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="MultiSalesyearComboBox"  />
+                                          <ComboBox fx:id="MultiSalesmonthComboBox"  />
+                                       </children>
+                                    </HBox>
+                                    <BarChart fx:id="multiEntryTicketSalesBarChart" layoutY="50.0" prefHeight="405.0" prefWidth="940.0" title="Multi-Entry Ticket Sales" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                       <xAxis>
+                                          <CategoryAxis label="Days in Month" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Sales" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </AnchorPane>
+                              </Tab>
+                              <!-- Complaint Status Report Tab -->
+                              <Tab closable="false" text="Complaint Status">
+                                 <AnchorPane prefHeight="442.0" prefWidth="918.0">
+                                    <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                                       <children>
+                                          <ComboBox fx:id="ComplaintsyearComboBox" />
+                                          <ComboBox fx:id="ComplaintsmonthComboBox" />
+                                       </children>
+                                    </HBox>
+                                    <BarChart fx:id="complaintStatusBarChart" layoutY="50.0" prefHeight="409.0" prefWidth="946.0" title="Complaint Status" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                       <xAxis>
+                                          <CategoryAxis label="Days in Month" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Complaints" />
+                                       </yAxis>
+                                    </BarChart>
+                                    <BarChart fx:id="complaintStatusHistogram" layoutY="50.0" prefHeight="409.0" prefWidth="946.0" title="Complaints by Cinema" visible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                       <xAxis>
+                                          <CategoryAxis label="Days in Month" />
+                                       </xAxis>
+                                       <yAxis>
+                                          <NumberAxis label="Complaints" />
+                                       </yAxis>
+                                    </BarChart>
+                                 </AnchorPane>
+                              </Tab>
+                              <!-- Network Manager Additional Reports Tab -->
+                              <Tab closable="false" text="Additional Reports">
+                                 <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-padding: 20;">
+                                    <VBox alignment="CENTER" spacing="40.0" style="-fx-padding: 40; -fx-background-color: #f4f4f4; -fx-border-color: #dcdcdc; -fx-background-radius: 10;">
+                                       <!-- Step 1: Send Request to Server -->
+                                       <VBox alignment="CENTER" spacing="5.0">
+                                          <Circle fill="#3498db" radius="30" />
+                                          <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #3498db;" text="Step 1: Send Request to Server" />
+                                          <Label style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Send a request to the server using the appropriate request type." />
+                                          <VBox alignment="TOP_LEFT" spacing="5.0" style="-fx-border-color: #ccc; -fx-border-width: 2;  -fx-background-color: #fefefe; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2); -fx-padding: 15;">
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="ReportMessage message = new ReportMessage(MessageType.REQUEST, RequestType.TICKET_SALES_REPORT, year, month);" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="SimpleClient.sendMessage(message);" />
+                                          </VBox>
+                                       </VBox>
+
+                                       <!-- Arrow -->
+                                       <VBox alignment="CENTER">
+                                          <Line endX="0" endY="40" startX="0" startY="0" stroke="#7f8c8d" strokeWidth="2" />
+                                          <SVGPath content="M 0 0 L 5 10 L 10 0 Z" fill="#7f8c8d" />
+                                       </VBox>
+
+                                       <!-- Step 2: Server Processes Request -->
+                                       <VBox alignment="CENTER" spacing="5.0">
+                                          <Circle fill="#2ecc71" radius="30" />
+                                          <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #27ae60;" text="Step 2: Server Processes Request" />
+                                          <Label style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="The server processes the request and retrieves the necessary data." />
+                                          <VBox alignment="TOP_LEFT" spacing="5.0" style="-fx-border-color: #ccc; -fx-border-width: 2;  -fx-background-color: #fefefe; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2); -fx-padding: 15;">
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="public void handleMessage() {" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="    switch (message.getRequestType()) {" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="        case TICKET_SALES_REPORT -> handleTicketSalesReport();" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="    }" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="}" />
+                                          </VBox>
+                                       </VBox>
+
+                                       <!-- Arrow -->
+                                       <VBox alignment="CENTER">
+                                          <Line endX="0" endY="40" startX="0" startY="0" stroke="#7f8c8d" strokeWidth="2" />
+                                          <SVGPath content="M 0 0 L 5 10 L 10 0 Z" fill="#7f8c8d" />
+                                       </VBox>
+
+                                       <!-- Step 3: Server Sends Response -->
+                                       <VBox alignment="CENTER" spacing="5.0">
+                                          <Circle fill="#e74c3c" radius="30" />
+                                          <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #c0392b;" text="Step 3: Server Sends Response" />
+                                          <Label style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="The server sends a response back to the client with the requested data." />
+                                          <VBox alignment="TOP_LEFT" spacing="5.0" style="-fx-border-color: #ccc; -fx-border-width: 2;  -fx-background-color: #fefefe; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2); -fx-padding: 15;">
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="message.responseType = ReportMessage.ResponseType.TICKET_SALES_DATA;" />
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="client.sendToClient(message);" />
+                                          </VBox>
+                                       </VBox>
+
+                                       <!-- Arrow -->
+                                       <VBox alignment="CENTER">
+                                          <Line endX="0" endY="40" startX="0" startY="0" stroke="#7f8c8d" strokeWidth="2" />
+                                          <SVGPath content="M 0 0 L 5 10 L 10 0 Z" fill="#7f8c8d" />
+                                       </VBox>
+
+                                       <!-- Step 4: Client Receives Response -->
+                                       <VBox alignment="CENTER" spacing="5.0">
+                                          <Circle fill="#9b59b6" radius="30" />
+                                          <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #8e44ad;" text="Step 4: Client Receives Response" />
+                                          <Label style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="The client receives the response and updates the UI accordingly." />
+                                          <VBox alignment="TOP_LEFT" spacing="5.0" style="-fx-border-color: #ccc; -fx-border-width: 2;  -fx-background-color: #fefefe; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0, 0, 2); -fx-padding: 15;">
+                                             <Label style="-fx-font-family: 'monospace'; -fx-font-size: 14px;" text="EventBus.getDefault().post(reportMessage);" />
+                                          </VBox>
+                                       </VBox>
+                                    </VBox>
+
+
+                                 </ScrollPane>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <opaqueInsets>
+                  <Insets bottom="20.0" left="50.0" right="50.0" />
+               </opaqueInsets>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

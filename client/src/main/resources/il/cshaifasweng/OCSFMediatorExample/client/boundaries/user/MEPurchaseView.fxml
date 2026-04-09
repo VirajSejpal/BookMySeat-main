@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="ME_pane" prefHeight="800" prefWidth="1000" stylesheets="@../../css/me-purchase.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.user.MEPurchaseBoundary">
+   <top>
+      <HBox alignment="CENTER" spacing="20" styleClass="step-indicator">
+         <Label fx:id="step1Label" styleClass="step-label" text="1" textFill="WHITE" />
+         <Label fx:id="step1Text" styleClass="step-text" text="Select Package" />
+         <Label fx:id="step2Label" styleClass="step-label" text="2" />
+         <Label fx:id="step2Text" styleClass="step-text" text="Payment Details" />
+      </HBox>
+   </top>
+
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: linear-gradient(to bottom right, #cae8fb, #ffffff);">
+         <StackPane fx:id="stackPane">
+            <!-- Package Selection Pane -->
+            <VBox fx:id="packageSelectionPane" alignment="TOP_CENTER" spacing="30" styleClass="content-pane">
+               <Label styleClass="section-title" text="Select Package" />
+               <VBox alignment="CENTER" maxWidth="420" spacing="20" styleClass="package-container">
+                  <Label styleClass="package-title" text="Subscription card (20 movie tickets)" />
+                  <GridPane hgap="15" styleClass="package-details" vgap="10">
+                     <Label text="Type" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                     <Label styleClass="highlight-text" text="VIP" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                     <Label text="Price" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                     <Label styleClass="highlight-text" text="₹2800.00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+               </VBox>
+               <Button onAction="#goToPaymentDetails" styleClass="button-primary" text="Next" />
+            </VBox>
+
+            <!-- Payment Details Pane -->
+            <VBox fx:id="paymentDetailsPane" alignment="TOP_CENTER" spacing="30" styleClass="content-pane">
+               <Label styleClass="section-title" text="Payment Details" />
+               <Label fx:id="timerLabel" styleClass="timer-label" text="10:00" visible="false" />
+               <GridPane alignment="CENTER" hgap="15" styleClass="form-grid" vgap="15">
+                  <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                  <TextField fx:id="firstNameTF" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                  <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <TextField fx:id="lastNameTF" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="ID Number:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <TextField fx:id="idNumberTF" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Confirm ID Number:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                  <TextField fx:id="confirmIdNumberTF" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+                  <TextField fx:id="emailTF" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Confirm Email:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+                  <TextField fx:id="confirmEmailTF" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <columnConstraints>
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints />
+                     <RowConstraints />
+                     <RowConstraints />
+                     <RowConstraints />
+                     <RowConstraints />
+                  </rowConstraints>
+               </GridPane>
+               <HBox alignment="CENTER" spacing="20">
+                  <Button onAction="#goToPackageSelection" styleClass="button-secondary" text="Back" />
+                  <Button onAction="#showCreditCardFields" styleClass="button-primary" text="Pay with Credit Card" />
+               </HBox>
+
+               <VBox alignment="CENTER">
+                  <VBox fx:id="creditCardPane" alignment="CENTER" maxWidth="400" spacing="20" styleClass="sub-pane" visible="false">
+                     <Label styleClass="label-large" text="Credit Card Payment" />
+                     <GridPane alignment="CENTER" hgap="15" vgap="15">
+                        <Label text="Card Number:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="cardNumberField" promptText="1234-5678-9012-3456" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <Label text="Expiration Date:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <ComboBox fx:id="expirationMonthCombo" promptText="MM" />
+                           <ComboBox fx:id="expirationYearCombo" promptText="YYYY" />
+                        </HBox>
+
+                        <Label text="CVV:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="cvvField" promptText="123" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                        <columnConstraints>
+                           <ColumnConstraints halignment="RIGHT" />
+                           <ColumnConstraints hgrow="ALWAYS" />
+                        </columnConstraints>
+                        <rowConstraints>
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints />
+                        </rowConstraints>
+                     </GridPane>
+                     <HBox alignment="CENTER" spacing="20">
+                        <Button onAction="#cancelPayment" styleClass="button-secondary" text="Cancel" />
+                        <Button onAction="#submitPayment" styleClass="button-primary" text="Pay Now" />
+                     </HBox>
+                  </VBox>
+               </VBox>
+            </VBox>
+
+            <!-- Package Confirmation Pane -->
+            <VBox fx:id="packageConfirmationPane" alignment="TOP_CENTER" fillWidth="false" prefHeight="786.0" prefWidth="999.0" spacing="5" styleClass="receipt-pane" stylesheets="@../../css/receipt.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+
+               <!-- Title -->
+               <Label styleClass="confirmation-title" text="Payment Confirmation" />
+
+               <!-- Content Wrapper -->
+               <VBox alignment="CENTER" fillWidth="false" prefHeight="242.0" prefWidth="327.0" styleClass="sub-pane" VBox.vgrow="NEVER">
+                  <GridPane alignment="CENTER" hgap="10" vgap="5">
+                     <!-- Header Section -->
+                     <VBox alignment="CENTER" prefHeight="74.0" prefWidth="293.0" spacing="2" styleClass="header-section" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                        <Label styleClass="header-title" text="BOOKMYSEAT" />
+                        <Label styleClass="header-subtitle" text="Subscription card" />
+                        <Label layoutX="10.0" layoutY="36.0" styleClass="header-subtitle" text="20 movie tickets" />
+                        <VBox.margin>
+                           <Insets top="20.0" />
+                        </VBox.margin>
+                     </VBox>
+
+                     <!-- Divider Line -->
+                     <Line endX="280.0" endY="0" startX="0" startY="0" styleClass="divider-line" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+                     <!-- Ticket Item Section -->
+                     <VBox alignment="CENTER" spacing="2" styleClass="ticket-section" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                        <HBox alignment="CENTER" prefHeight="16.0" prefWidth="320.0" spacing="20.0">
+                           <Text styleClass="ticket-header" text="QTY" wrappingWidth="69.2041015625" />
+                           <Text styleClass="ticket-header" text="DESCRIPTION" wrappingWidth="115.4150390625" />
+                           <Text styleClass="ticket-header" text="PRICE" wrappingWidth="88.0068359375" />
+                        </HBox>
+                        <Label prefHeight="16.0" prefWidth="422.0" styleClass="divider-text" text="---------------------------------" />
+                        <HBox alignment="CENTER" spacing="10">
+                           <Text styleClass="ticket-item" text="1" wrappingWidth="90.4013671875" />
+                           <Text styleClass="ticket-item" text="PACKAGE" wrappingWidth="109.02734375" />
+                           <Text fx:id="pricePaidText" styleClass="ticket-price" text="₹2800" wrappingWidth="89.60546875" />
+                        </HBox>
+                     </VBox>
+
+                     <!-- Divider Line -->
+                     <Line endX="280.0" endY="0" startX="0" startY="0" styleClass="divider-line" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+                     <!-- Summary Section -->
+                     <VBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="959.0" spacing="2" styleClass="summary-section" GridPane.columnIndex="0" GridPane.rowIndex="4">
+                        <HBox alignment="CENTER" spacing="10">
+                           <Text styleClass="summary-label" text="TOTAL AMOUNT" />
+                           <Text fx:id="totalAmountLabel" styleClass="summary-value" text="₹2800" />
+                        </HBox>
+                     </VBox>
+
+                     <!-- GridPane Constraints for main grid -->
+                     <columnConstraints>
+                        <ColumnConstraints maxWidth="420.0" minWidth="200.0" prefWidth="420.0" />
+                     </columnConstraints>
+
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+               </VBox>
+            </VBox>
+
+         </StackPane>
+      </ScrollPane>
+   </center>
+</BorderPane>

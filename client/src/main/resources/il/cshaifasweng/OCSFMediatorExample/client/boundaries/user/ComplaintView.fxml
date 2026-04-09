@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="complaintPane" fx:id="complaintPane" prefHeight="800" prefWidth="1000" stylesheets="@../../css/complaint.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.user.ComplaintBoundary">
+
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true">
+            <StackPane fx:id="stackPane">
+                <!-- Complaint Details Pane -->
+                <VBox id="complaint-content-pane" fx:id="complaintDetailsPane" alignment="TOP_CENTER" spacing="30">
+                    <Label id="complaint-section-title" text="Submit a Complaint" />
+                    <VBox id="complaint-package-container" alignment="CENTER" maxWidth="661.0" prefHeight="254.0" prefWidth="661.0" spacing="20">
+                        <GridPane id="complaint-form-grid" hgap="20" vgap="20">
+                            <Label fx:id="nameHeader" id="complaint-label" text="Customer Name:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                            <TextField fx:id="txtCustomerName" promptText="Enter your name" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                            <Label fx:id="emailHeader" id="complaint-label" text="Customer Email:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                            <TextField fx:id="txtCustomerEmail" promptText="Enter your email" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                            <Label fx:id="complaintHeader" id="complaint-label" text="Complaint Details:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                            <TextArea fx:id="txtComplaintDetails" prefRowCount="5" prefWidth="471.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" />
+                                <ColumnConstraints hgrow="ALWAYS" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints />
+                                <RowConstraints />
+                                <RowConstraints />
+                            </rowConstraints>
+                        </GridPane>
+                    </VBox>
+                    <Button id="complaint-button-primary" fx:id="btnSubmitComplaint" onAction="#submitComplaint" text="Send" />
+                </VBox>
+            </StackPane>
+        </ScrollPane>
+    </center>
+</BorderPane>

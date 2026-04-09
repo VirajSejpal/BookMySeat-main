@@ -1,0 +1,803 @@
+﻿[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for il.cshaifasweng.OCSFMediatorExample:server:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.hibernate:hibernate-core:jar -> version 5.4.12.Final vs 5.6.1.Final @ line 59, column 21
+[WARNING] The expression ${groupId} is deprecated. Please use ${project.groupId} instead.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] OCSFMediatorExample                                                [pom]
+[INFO] entities                                                           [jar]
+[INFO] server                                                             [jar]
+[INFO] client                                                             [jar]
+[INFO] 
+[INFO] ----------------< il.cshaifasweng:OCSFMediatorExample >-----------------
+[INFO] Building OCSFMediatorExample 0.0.1-SNAPSHOT                        [1/4]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ OCSFMediatorExample ---
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\pom.xml to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\0.0.1-SNAPSHOT\OCSFMediatorExample-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] ------------< il.cshaifasweng.OCSFMediatorExample:entities >------------
+[INFO] Building entities 0.0.1-SNAPSHOT                                   [2/4]
+[INFO]   from entities\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-controls:jar:22-ea+11 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ entities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ entities ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ entities ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ entities ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ entities ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.0.2:jar (default-jar) @ entities ---
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ entities ---
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\target\entities-0.0.1-SNAPSHOT.jar to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\entities\0.0.1-SNAPSHOT\entities-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\entities\pom.xml to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\entities\0.0.1-SNAPSHOT\entities-0.0.1-SNAPSHOT.pom
+[INFO] 
+[INFO] -------------< il.cshaifasweng.OCSFMediatorExample:server >-------------
+[INFO] Building server 0.0.1-SNAPSHOT                                     [3/4]
+[INFO]   from server\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ server ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ server ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.0.2:jar (default-jar) @ server ---
+[INFO] 
+[INFO] --- assembly:3.3.0:single (make-assembly) @ server ---
+[WARNING] Failed to build parent project for org.openjfx:javafx-controls:jar:22-ea+11
+[WARNING] Failed to build parent project for org.openjfx:javafx-controls:jar:22-ea+11
+[WARNING] Failed to build parent project for org.openjfx:javafx-graphics:jar:22-ea+11
+[WARNING] Failed to build parent project for org.openjfx:javafx-graphics:jar:22-ea+11
+[WARNING] Failed to build parent project for org.openjfx:javafx-base:jar:22-ea+11
+[WARNING] Failed to build parent project for org.openjfx:javafx-base:jar:22-ea+11
+[INFO] Building jar: C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target\server-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ server ---
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target\server-0.0.1-SNAPSHOT.jar to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\server\0.0.1-SNAPSHOT\server-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\pom.xml to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\server\0.0.1-SNAPSHOT\server-0.0.1-SNAPSHOT.pom
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\server\target\server-0.0.1-SNAPSHOT-jar-with-dependencies.jar to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\server\0.0.1-SNAPSHOT\server-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+[INFO] 
+[INFO] -------------< il.cshaifasweng.OCSFMediatorExample:client >-------------
+[INFO] Building client 0.0.1-SNAPSHOT                                     [4/4]
+[INFO]   from client\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 6 problems were encountered while building the effective model for org.openjfx:javafx-base:jar:22 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- resources:3.0.2:resources (default-resources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 90 resources
+[INFO] 
+[INFO] --- compiler:3.8.0:compile (default-compile) @ client ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.0.2:testResources (default-testResources) @ client ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.8.0:testCompile (default-testCompile) @ client ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.22.1:test (default-test) @ client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.0.2:jar (default-jar) @ client ---
+[INFO] 
+[INFO] --- shade:3.2.3:shade (default) @ client ---
+[INFO] Including org.openjfx:javafx-base:jar:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-base:jar:win:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-controls:jar:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-controls:jar:win:22 in the shaded jar.
+[INFO] Including com.google.zxing:core:jar:3.4.1 in the shaded jar.
+[INFO] Including com.google.zxing:javase:jar:3.4.1 in the shaded jar.
+[INFO] Including com.beust:jcommander:jar:1.78 in the shaded jar.
+[INFO] Including com.github.jai-imageio:jai-imageio-core:jar:1.4.0 in the shaded jar.
+[INFO] Including com.itextpdf:itextpdf:jar:5.5.13.4 in the shaded jar.
+[INFO] Including org.openjfx:javafx-fxml:jar:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-fxml:jar:win:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-graphics:jar:22 in the shaded jar.
+[INFO] Including org.openjfx:javafx-graphics:jar:win:22 in the shaded jar.
+[INFO] Including io.datafx:datafx:jar:8.0.7 in the shaded jar.
+[INFO] Including org.kordamp.ikonli:ikonli-javafx:jar:11.4.0 in the shaded jar.
+[INFO] Including org.kordamp.ikonli:ikonli-core:jar:11.4.0 in the shaded jar.
+[INFO] Including org.kordamp.ikonli:ikonli-fontawesome5-pack:jar:11.4.0 in the shaded jar.
+[INFO] Including org.greenrobot:eventbus:jar:3.2.0 in the shaded jar.
+[INFO] Including il.cshaifasweng.OCSFMediatorExample:entities:jar:0.0.1-SNAPSHOT in the shaded jar.
+[INFO] Including org.json:json:jar:20231013 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.8.9 in the shaded jar.
+[INFO] Including org.hibernate:hibernate-core:jar:5.6.1.Final in the shaded jar.
+[INFO] Including org.jboss.logging:jboss-logging:jar:3.4.2.Final in the shaded jar.
+[INFO] Including javax.persistence:javax.persistence-api:jar:2.2 in the shaded jar.
+[INFO] Including net.bytebuddy:byte-buddy:jar:1.11.20 in the shaded jar.
+[INFO] Including antlr:antlr:jar:2.7.7 in the shaded jar.
+[INFO] Including org.jboss.spec.javax.transaction:jboss-transaction-api_1.2_spec:jar:1.1.1.Final in the shaded jar.
+[INFO] Including org.jboss:jandex:jar:2.2.3.Final in the shaded jar.
+[INFO] Including com.fasterxml:classmate:jar:1.5.1 in the shaded jar.
+[INFO] Including javax.activation:javax.activation-api:jar:1.2.0 in the shaded jar.
+[INFO] Including org.hibernate.common:hibernate-commons-annotations:jar:5.1.2.Final in the shaded jar.
+[INFO] Including javax.xml.bind:jaxb-api:jar:2.3.1 in the shaded jar.
+[INFO] Including org.glassfish.jaxb:jaxb-runtime:jar:2.3.1 in the shaded jar.
+[INFO] Including org.glassfish.jaxb:txw2:jar:2.3.1 in the shaded jar.
+[INFO] Including com.sun.istack:istack-commons-runtime:jar:3.0.7 in the shaded jar.
+[INFO] Including org.jvnet.staxex:stax-ex:jar:1.8 in the shaded jar.
+[INFO] Including com.sun.xml.fastinfoset:FastInfoset:jar:1.2.15 in the shaded jar.
+[INFO] Including jakarta.persistence:jakarta.persistence-api:jar:2.2.3 in the shaded jar.
+[INFO] Including org.hibernate:hibernate-entitymanager:jar:5.6.1.Final in the shaded jar.
+[INFO] Including io.vproxy:vfx:jar:1.4.0 in the shaded jar.
+[INFO] Including com.github.kwhat:jnativehook:jar:2.2.2 in the shaded jar.
+[INFO] Including io.vproxy:commons:jar:1.3.4 in the shaded jar.
+[INFO] Including io.vproxy:vjson:jar:1.5.5-jdk9 in the shaded jar.
+[INFO] Including io.vproxy:kotlin-stdlib-lite:jar:1.0.2-jdk9 in the shaded jar.
+[INFO] Including de.jensd:fontawesomefx-commons:jar:9.1.2 in the shaded jar.
+[INFO] Including de.jensd:fontawesomefx-fontawesome:jar:4.7.0-9.1.2 in the shaded jar.
+[INFO] Including com.jfoenix:jfoenix:jar:9.0.10 in the shaded jar.
+[INFO] Including io.github.typhon0:AnimateFX:jar:1.2.0 in the shaded jar.
+[INFO] Including il.cshaifasweng.OCSFMediatorExample:server:jar:0.0.1-SNAPSHOT in the shaded jar.
+[INFO] Including com.sun.mail:javax.mail:jar:1.6.2 in the shaded jar.
+[INFO] Including javax.activation:activation:jar:1.1 in the shaded jar.
+[INFO] Including mysql:mysql-connector-java:jar:8.0.19 in the shaded jar.
+[INFO] Including com.google.protobuf:protobuf-java:jar:3.6.1 in the shaded jar.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] Discovered module-info.class. Shading will break its strong encapsulation.
+[WARNING] client-0.0.1-SNAPSHOT.jar, json-20231013.jar define 31 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.json/json/pom.properties
+[WARNING]   - META-INF/maven/org.json/json/pom.xml
+[WARNING]   - org.json.CDL
+[WARNING]   - org.json.Cookie
+[WARNING]   - org.json.CookieList
+[WARNING]   - org.json.HTTP
+[WARNING]   - org.json.HTTPTokener
+[WARNING]   - org.json.JSONArray
+[WARNING]   - org.json.JSONException
+[WARNING]   - org.json.JSONML
+[WARNING]   - 21 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jaxb-runtime-2.3.1.jar define 765 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.glassfish.jaxb/jaxb-runtime/pom.properties
+[WARNING]   - META-INF/maven/org.glassfish.jaxb/jaxb-runtime/pom.xml
+[WARNING]   - META-INF/services/javax.xml.bind.JAXBContext
+[WARNING]   - com.sun.xml.bind.AccessorFactory
+[WARNING]   - com.sun.xml.bind.AccessorFactoryImpl
+[WARNING]   - com.sun.xml.bind.AnyTypeAdapter
+[WARNING]   - com.sun.xml.bind.CycleRecoverable
+[WARNING]   - com.sun.xml.bind.CycleRecoverable$Context
+[WARNING]   - com.sun.xml.bind.DatatypeConverterImpl
+[WARNING]   - com.sun.xml.bind.DatatypeConverterImpl$1
+[WARNING]   - 755 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, vfx-1.4.0.jar define 230 overlapping classes and resources: 
+[WARNING]   - io.vproxy.vfx.animation.AnimationApplyFunction
+[WARNING]   - io.vproxy.vfx.animation.AnimationEdge
+[WARNING]   - io.vproxy.vfx.animation.AnimationGraph
+[WARNING]   - io.vproxy.vfx.animation.AnimationGraph$1
+[WARNING]   - io.vproxy.vfx.animation.AnimationGraph$2
+[WARNING]   - io.vproxy.vfx.animation.AnimationGraph$Animation
+[WARNING]   - io.vproxy.vfx.animation.AnimationGraphBuilder
+[WARNING]   - io.vproxy.vfx.animation.AnimationInterrupted
+[WARNING]   - io.vproxy.vfx.animation.AnimationNode
+[WARNING]   - io.vproxy.vfx.animation.AnimationStateTransferBeginCallback
+[WARNING]   - 220 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javase-3.4.1.jar define 14 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.google.zxing/javase/pom.properties
+[WARNING]   - META-INF/maven/com.google.zxing/javase/pom.xml
+[WARNING]   - com.google.zxing.client.j2se.BufferedImageLuminanceSource
+[WARNING]   - com.google.zxing.client.j2se.CommandLineEncoder
+[WARNING]   - com.google.zxing.client.j2se.CommandLineRunner
+[WARNING]   - com.google.zxing.client.j2se.DecodeWorker
+[WARNING]   - com.google.zxing.client.j2se.DecoderConfig
+[WARNING]   - com.google.zxing.client.j2se.EncoderConfig
+[WARNING]   - com.google.zxing.client.j2se.GUIRunner
+[WARNING]   - com.google.zxing.client.j2se.HtmlAssetTranslator
+[WARNING]   - 4 more...
+[WARNING] activation-1.1.jar, client-0.0.1-SNAPSHOT.jar, javax.activation-api-1.2.0.jar, javax.mail-1.6.2.jar, jaxb-api-2.3.1.jar, jboss-logging-3.4.2.Final.jar, jboss-transaction-api_1.2_spec-1.1.1.Final.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/LICENSE.txt
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-controls-22-win.jar, javafx-graphics-22-win.jar define 4 overlapping resources: 
+[WARNING]   - META-INF/substrate/config/reflectionconfig-aarch64-android.json
+[WARNING]   - META-INF/substrate/config/reflectionconfig-arm64-ios.json
+[WARNING]   - META-INF/substrate/config/reflectionconfig-x86_64-ios.json
+[WARNING]   - META-INF/substrate/config/resourcebundles
+[WARNING] AnimateFX-1.2.0.jar, client-0.0.1-SNAPSHOT.jar define 78 overlapping classes: 
+[WARNING]   - animatefx.animation.AnimateFXInterpolator
+[WARNING]   - animatefx.animation.AnimationFX
+[WARNING]   - animatefx.animation.Bounce
+[WARNING]   - animatefx.animation.BounceIn
+[WARNING]   - animatefx.animation.BounceInDown
+[WARNING]   - animatefx.animation.BounceInLeft
+[WARNING]   - animatefx.animation.BounceInRight
+[WARNING]   - animatefx.animation.BounceInUp
+[WARNING]   - animatefx.animation.BounceOut
+[WARNING]   - animatefx.animation.BounceOutDown
+[WARNING]   - 68 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jcommander-1.78.jar define 68 overlapping classes: 
+[WARNING]   - com.beust.jcommander.DefaultUsageFormatter
+[WARNING]   - com.beust.jcommander.DynamicParameter
+[WARNING]   - com.beust.jcommander.FuzzyMap
+[WARNING]   - com.beust.jcommander.FuzzyMap$IKey
+[WARNING]   - com.beust.jcommander.IDefaultProvider
+[WARNING]   - com.beust.jcommander.IParameterValidator
+[WARNING]   - com.beust.jcommander.IParameterValidator2
+[WARNING]   - com.beust.jcommander.IStringConverter
+[WARNING]   - com.beust.jcommander.IStringConverterFactory
+[WARNING]   - com.beust.jcommander.IStringConverterInstanceFactory
+[WARNING]   - 58 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-base-22-win.jar, javafx-controls-22-win.jar, javafx-fxml-22-win.jar, javafx-graphics-22-win.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/substrate/config/reflectionconfig.json
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-controls-22-win.jar define 1508 overlapping classes and resources: 
+[WARNING]   - com.sun.javafx.charts.ChartLayoutAnimator
+[WARNING]   - com.sun.javafx.charts.Legend
+[WARNING]   - com.sun.javafx.charts.Legend$1
+[WARNING]   - com.sun.javafx.charts.Legend$2
+[WARNING]   - com.sun.javafx.charts.Legend$LegendItem
+[WARNING]   - com.sun.javafx.charts.Legend$LegendItem$1
+[WARNING]   - com.sun.javafx.charts.Legend$LegendItem$2
+[WARNING]   - com.sun.javafx.scene.control.ConstrainedColumnResize
+[WARNING]   - com.sun.javafx.scene.control.ConstrainedColumnResize$ResizeMode
+[WARNING]   - com.sun.javafx.scene.control.ConstrainedColumnResize$TablePolicy
+[WARNING]   - 1498 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jboss-logging-3.4.2.Final.jar define 37 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.jboss.logging/jboss-logging/pom.properties
+[WARNING]   - META-INF/maven/org.jboss.logging/jboss-logging/pom.xml
+[WARNING]   - org.jboss.logging.AbstractLoggerProvider
+[WARNING]   - org.jboss.logging.AbstractLoggerProvider$Entry
+[WARNING]   - org.jboss.logging.AbstractMdcLoggerProvider
+[WARNING]   - org.jboss.logging.BasicLogger
+[WARNING]   - org.jboss.logging.DelegatingBasicLogger
+[WARNING]   - org.jboss.logging.JBossLogManagerLogger
+[WARNING]   - org.jboss.logging.JBossLogManagerProvider
+[WARNING]   - org.jboss.logging.JBossLogManagerProvider$1
+[WARNING]   - 27 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, fontawesomefx-commons-9.1.2.jar define 16 overlapping classes: 
+[WARNING]   - de.jensd.fx.glyphs.GlyphIcon
+[WARNING]   - de.jensd.fx.glyphs.GlyphIcon$StyleableProperties
+[WARNING]   - de.jensd.fx.glyphs.GlyphIcon$StyleableProperties$1
+[WARNING]   - de.jensd.fx.glyphs.GlyphIcon$StyleableProperties$2
+[WARNING]   - de.jensd.fx.glyphs.GlyphIconUtils
+[WARNING]   - de.jensd.fx.glyphs.GlyphIcons
+[WARNING]   - de.jensd.fx.glyphs.GlyphStackIcon
+[WARNING]   - de.jensd.fx.glyphs.GlyphStackIcon$StyleableProperties
+[WARNING]   - de.jensd.fx.glyphs.GlyphStackIcon$StyleableProperties$1
+[WARNING]   - de.jensd.fx.glyphs.GlyphStackIcon$StyleableProperties$2
+[WARNING]   - 6 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, itextpdf-5.5.13.4.jar define 958 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.itextpdf/itextpdf/pom.properties
+[WARNING]   - META-INF/maven/com.itextpdf/itextpdf/pom.xml
+[WARNING]   - com.itextpdf.awt.AsianFontMapper
+[WARNING]   - com.itextpdf.awt.DefaultFontMapper
+[WARNING]   - com.itextpdf.awt.DefaultFontMapper$BaseFontParameters
+[WARNING]   - com.itextpdf.awt.FontMapper
+[WARNING]   - com.itextpdf.awt.PdfGraphics2D
+[WARNING]   - com.itextpdf.awt.PdfGraphics2D$1
+[WARNING]   - com.itextpdf.awt.PdfGraphics2D$FakeComponent
+[WARNING]   - com.itextpdf.awt.PdfGraphics2D$HyperLinkKey
+[WARNING]   - 948 more...
+[WARNING] FastInfoset-1.2.15.jar, client-0.0.1-SNAPSHOT.jar define 151 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.sun.xml.fastinfoset/FastInfoset/pom.properties
+[WARNING]   - META-INF/maven/com.sun.xml.fastinfoset/FastInfoset/pom.xml
+[WARNING]   - com.sun.xml.fastinfoset.AbstractResourceBundle
+[WARNING]   - com.sun.xml.fastinfoset.CommonResourceBundle
+[WARNING]   - com.sun.xml.fastinfoset.Decoder
+[WARNING]   - com.sun.xml.fastinfoset.Decoder$EncodingAlgorithmInputStream
+[WARNING]   - com.sun.xml.fastinfoset.DecoderStateTables
+[WARNING]   - com.sun.xml.fastinfoset.Encoder
+[WARNING]   - com.sun.xml.fastinfoset.Encoder$1
+[WARNING]   - com.sun.xml.fastinfoset.Encoder$EncodingBufferOutputStream
+[WARNING]   - 141 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, istack-commons-runtime-3.0.7.jar define 24 overlapping classes and resources: 
+[WARNING]   - .gitkeep
+[WARNING]   - META-INF/maven/com.sun.istack/istack-commons-runtime/pom.properties
+[WARNING]   - META-INF/maven/com.sun.istack/istack-commons-runtime/pom.xml
+[WARNING]   - com.sun.istack.Builder
+[WARNING]   - com.sun.istack.ByteArrayDataSource
+[WARNING]   - com.sun.istack.FinalArrayList
+[WARNING]   - com.sun.istack.FragmentContentHandler
+[WARNING]   - com.sun.istack.Interned
+[WARNING]   - com.sun.istack.NotNull
+[WARNING]   - com.sun.istack.Nullable
+[WARNING]   - 14 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javax.activation-api-1.2.0.jar define 6 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/javax.activation/javax.activation-api/pom.properties
+[WARNING]   - META-INF/maven/javax.activation/javax.activation-api/pom.xml
+[WARNING]   - javax.activation.CommandInfo$Beans
+[WARNING]   - javax.activation.CommandInfo$Beans$1
+[WARNING]   - javax.activation.MailcapCommandMap$1
+[WARNING]   - javax.activation.MimetypesFileTypeMap$1
+[WARNING] client-0.0.1-SNAPSHOT.jar, jakarta.persistence-api-2.2.3.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/maven/jakarta.persistence/jakarta.persistence-api/pom.properties
+[WARNING]   - META-INF/maven/jakarta.persistence/jakarta.persistence-api/pom.xml
+[WARNING] client-0.0.1-SNAPSHOT.jar, core-3.4.1.jar define 266 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.google.zxing/core/pom.properties
+[WARNING]   - META-INF/maven/com.google.zxing/core/pom.xml
+[WARNING]   - com.google.zxing.BarcodeFormat
+[WARNING]   - com.google.zxing.Binarizer
+[WARNING]   - com.google.zxing.BinaryBitmap
+[WARNING]   - com.google.zxing.ChecksumException
+[WARNING]   - com.google.zxing.DecodeHintType
+[WARNING]   - com.google.zxing.Dimension
+[WARNING]   - com.google.zxing.EncodeHintType
+[WARNING]   - com.google.zxing.FormatException
+[WARNING]   - 256 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, protobuf-java-3.6.1.jar define 595 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.google.protobuf/protobuf-java/pom.properties
+[WARNING]   - META-INF/maven/com.google.protobuf/protobuf-java/pom.xml
+[WARNING]   - com.google.protobuf.AbstractMessage
+[WARNING]   - com.google.protobuf.AbstractMessage$Builder
+[WARNING]   - com.google.protobuf.AbstractMessage$BuilderParent
+[WARNING]   - com.google.protobuf.AbstractMessageLite
+[WARNING]   - com.google.protobuf.AbstractMessageLite$Builder
+[WARNING]   - com.google.protobuf.AbstractMessageLite$Builder$LimitedInputStream
+[WARNING]   - com.google.protobuf.AbstractParser
+[WARNING]   - com.google.protobuf.AbstractProtobufList
+[WARNING]   - 585 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jfoenix-9.0.10.jar define 427 overlapping classes and resources: 
+[WARNING]   - com.jfoenix.adapters.ReflectionHelper
+[WARNING]   - com.jfoenix.animation.JFXNodesAnimation
+[WARNING]   - com.jfoenix.animation.alert.CenterTransition
+[WARNING]   - com.jfoenix.animation.alert.HorizontalTransition
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation$1
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation$2
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation$3
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation$4
+[WARNING]   - com.jfoenix.animation.alert.JFXAlertAnimation$5
+[WARNING]   - 417 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, ikonli-javafx-11.4.0.jar define 26 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-javafx/pom.properties
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-javafx/pom.xml
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$1
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$2
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$3
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$StyleableProperties
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$StyleableProperties$1
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$StyleableProperties$2
+[WARNING]   - org.kordamp.ikonli.javafx.FontIcon$StyleableProperties$3
+[WARNING]   - 16 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jboss-transaction-api_1.2_spec-1.1.1.Final.jar, mysql-connector-java-8.0.19.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/README
+[WARNING] client-0.0.1-SNAPSHOT.jar, ikonli-core-11.4.0.jar define 8 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-core/pom.properties
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-core/pom.xml
+[WARNING]   - META-INF/resources/ikonli/0.0.0/fonts/ikonli.ttf
+[WARNING]   - org.kordamp.ikonli.AbstractIkonHandler
+[WARNING]   - org.kordamp.ikonli.Ikon
+[WARNING]   - org.kordamp.ikonli.IkonHandler
+[WARNING]   - org.kordamp.ikonli.Ikonli
+[WARNING]   - org.kordamp.ikonli.IkonliIkonResolver
+[WARNING] client-0.0.1-SNAPSHOT.jar, server-0.0.1-SNAPSHOT.jar define 54 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/il.cshaifasweng.OCSFMediatorExample/server/pom.properties
+[WARNING]   - META-INF/maven/il.cshaifasweng.OCSFMediatorExample/server/pom.xml
+[WARNING]   - hibernate.properties
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.GenerateDB
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.SimpleChatServer
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.SimpleServer
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.events.ComplaintEvent
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.events.Event
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.events.HomeViewingEvent
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.server.events.MovieEvent
+[WARNING]   - 44 more...
+[WARNING] byte-buddy-1.11.20.jar, client-0.0.1-SNAPSHOT.jar define 2574 overlapping classes and resources: 
+[WARNING]   - META-INF.versions.9.module-info
+[WARNING]   - META-INF/licenses/ASM
+[WARNING]   - META-INF/maven/net.bytebuddy/byte-buddy-dep/pom.properties
+[WARNING]   - META-INF/maven/net.bytebuddy/byte-buddy-dep/pom.xml
+[WARNING]   - META-INF/maven/net.bytebuddy/byte-buddy/pom.properties
+[WARNING]   - META-INF/maven/net.bytebuddy/byte-buddy/pom.xml
+[WARNING]   - net.bytebuddy.ByteBuddy
+[WARNING]   - net.bytebuddy.ByteBuddy$EnumerationImplementation
+[WARNING]   - net.bytebuddy.ByteBuddy$EnumerationImplementation$InitializationAppender
+[WARNING]   - net.bytebuddy.ByteBuddy$EnumerationImplementation$ValuesMethodAppender
+[WARNING]   - 2564 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-graphics-22-win.jar define 3221 overlapping classes and resources: 
+[WARNING]   - META-INF/substrate/config/jniconfig-aarch64-android.json
+[WARNING]   - META-INF/substrate/config/jniconfig-aarch64-darwin.json
+[WARNING]   - META-INF/substrate/config/jniconfig-aarch64-linux.json
+[WARNING]   - META-INF/substrate/config/jniconfig-arm64-ios.json
+[WARNING]   - META-INF/substrate/config/jniconfig-x86_64-darwin.json
+[WARNING]   - META-INF/substrate/config/jniconfig-x86_64-ios.json
+[WARNING]   - META-INF/substrate/config/jniconfig-x86_64-linux.json
+[WARNING]   - META-INF/substrate/config/jniconfig-x86_64-windows.json
+[WARNING]   - META-INF/substrate/config/jniconfig.json
+[WARNING]   - META-INF/substrate/config/reflectionconfig-aarch64-darwin.json
+[WARNING]   - 3211 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-fxml-22-win.jar define 78 overlapping classes: 
+[WARNING]   - com.sun.javafx.fxml.BeanAdapter
+[WARNING]   - com.sun.javafx.fxml.BeanAdapter$1
+[WARNING]   - com.sun.javafx.fxml.BeanAdapter$MethodCache
+[WARNING]   - com.sun.javafx.fxml.FXMLLoaderHelper
+[WARNING]   - com.sun.javafx.fxml.FXMLLoaderHelper$FXMLLoaderAccessor
+[WARNING]   - com.sun.javafx.fxml.MethodHelper
+[WARNING]   - com.sun.javafx.fxml.ModuleHelper
+[WARNING]   - com.sun.javafx.fxml.ParseTraceElement
+[WARNING]   - com.sun.javafx.fxml.PropertyNotFoundException
+[WARNING]   - com.sun.javafx.fxml.builder.JavaFXFontBuilder
+[WARNING]   - 68 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, vjson-1.5.5-jdk9.jar define 854 overlapping classes and resources: 
+[WARNING]   - META-INF/vjson.kotlin_module
+[WARNING]   - vjson.CharStream
+[WARNING]   - vjson.CharStream$Companion
+[WARNING]   - vjson.CharStream$DefaultImpls
+[WARNING]   - vjson.JSON
+[WARNING]   - vjson.JSON$Array
+[WARNING]   - vjson.JSON$Bool
+[WARNING]   - vjson.JSON$Double
+[WARNING]   - vjson.JSON$Exp
+[WARNING]   - vjson.JSON$Instance
+[WARNING]   - 844 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jakarta.persistence-api-2.2.3.jar, javax.persistence-api-2.2.jar define 215 overlapping classes and resources: 
+[WARNING]   - javax.persistence.Access
+[WARNING]   - javax.persistence.AccessType
+[WARNING]   - javax.persistence.AssociationOverride
+[WARNING]   - javax.persistence.AssociationOverrides
+[WARNING]   - javax.persistence.AttributeConverter
+[WARNING]   - javax.persistence.AttributeNode
+[WARNING]   - javax.persistence.AttributeOverride
+[WARNING]   - javax.persistence.AttributeOverrides
+[WARNING]   - javax.persistence.Basic
+[WARNING]   - javax.persistence.Cache
+[WARNING]   - 205 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jandex-2.2.3.Final.jar define 108 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.jboss/jandex/pom.properties
+[WARNING]   - META-INF/maven/org.jboss/jandex/pom.xml
+[WARNING]   - org.jboss.jandex.AnnotationInstance
+[WARNING]   - org.jboss.jandex.AnnotationInstance$1
+[WARNING]   - org.jboss.jandex.AnnotationInstance$2
+[WARNING]   - org.jboss.jandex.AnnotationInstance$InstanceNameComparator
+[WARNING]   - org.jboss.jandex.AnnotationTarget
+[WARNING]   - org.jboss.jandex.AnnotationTarget$Kind
+[WARNING]   - org.jboss.jandex.AnnotationTargetFilterCollection
+[WARNING]   - org.jboss.jandex.AnnotationTargetFilterCollection$1
+[WARNING]   - 98 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, fontawesomefx-commons-9.1.2.jar, fontawesomefx-fontawesome-4.7.0-9.1.2.jar define 1 overlapping resources: 
+[WARNING]   - LICENSE.txt
+[WARNING] antlr-2.7.7.jar, client-0.0.1-SNAPSHOT.jar define 224 overlapping classes: 
+[WARNING]   - antlr.ANTLRError
+[WARNING]   - antlr.ANTLRException
+[WARNING]   - antlr.ANTLRGrammarParseBehavior
+[WARNING]   - antlr.ANTLRHashString
+[WARNING]   - antlr.ANTLRLexer
+[WARNING]   - antlr.ANTLRParser
+[WARNING]   - antlr.ANTLRStringBuffer
+[WARNING]   - antlr.ANTLRTokdefLexer
+[WARNING]   - antlr.ANTLRTokdefParser
+[WARNING]   - antlr.ANTLRTokdefParserTokenTypes
+[WARNING]   - 214 more...
+[WARNING] classmate-1.5.1.jar, client-0.0.1-SNAPSHOT.jar define 41 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.fasterxml/classmate/pom.properties
+[WARNING]   - META-INF/maven/com.fasterxml/classmate/pom.xml
+[WARNING]   - com.fasterxml.classmate.AnnotationConfiguration
+[WARNING]   - com.fasterxml.classmate.AnnotationConfiguration$StdConfiguration
+[WARNING]   - com.fasterxml.classmate.AnnotationInclusion
+[WARNING]   - com.fasterxml.classmate.AnnotationOverrides
+[WARNING]   - com.fasterxml.classmate.AnnotationOverrides$StdBuilder
+[WARNING]   - com.fasterxml.classmate.AnnotationOverrides$StdImpl
+[WARNING]   - com.fasterxml.classmate.Annotations
+[WARNING]   - com.fasterxml.classmate.Filter
+[WARNING]   - 31 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javafx-base-22-win.jar define 663 overlapping classes and resources: 
+[WARNING]   - com.sun.javafx.FXPermissions
+[WARNING]   - com.sun.javafx.PlatformUtil
+[WARNING]   - com.sun.javafx.UnmodifiableArrayList
+[WARNING]   - com.sun.javafx.beans.IDProperty
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding$BidirectionalBooleanBinding
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding$BidirectionalDoubleBinding
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding$BidirectionalFloatBinding
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding$BidirectionalIntegerBinding
+[WARNING]   - com.sun.javafx.binding.BidirectionalBinding$BidirectionalLongBinding
+[WARNING]   - 653 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, hibernate-entitymanager-5.6.1.Final.jar define 1 overlapping resources: 
+[WARNING]   - README.txt
+[WARNING] client-0.0.1-SNAPSHOT.jar, fontawesomefx-fontawesome-4.7.0-9.1.2.jar define 8 overlapping classes and resources: 
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.demo.FontAwesomeIconsDemoApp
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.demo.FontTestFX
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.utils.FontAwesomeIconFactory
+[WARNING]   - de.jensd.fx.glyphs.fontawesome.utils.FontAwesomeIconNameComparator
+[WARNING]   - de/jensd/fx/glyphs/fontawesome/fontawesome-webfont.ttf
+[WARNING]   - de/jensd/fx/glyphs/fontawesome/fontinfo.properties
+[WARNING] client-0.0.1-SNAPSHOT.jar, ikonli-core-11.4.0.jar, ikonli-fontawesome5-pack-11.4.0.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/services/org.kordamp.ikonli.IkonHandler
+[WARNING] client-0.0.1-SNAPSHOT.jar, jai-imageio-core-1.4.0.jar define 345 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.github.jai-imageio/jai-imageio-core/pom.properties
+[WARNING]   - META-INF/maven/com.github.jai-imageio/jai-imageio-core/pom.xml
+[WARNING]   - META-INF/services/javax.imageio.spi.ImageInputStreamSpi
+[WARNING]   - META-INF/services/javax.imageio.spi.ImageOutputStreamSpi
+[WARNING]   - META-INF/services/javax.imageio.spi.ImageReaderSpi
+[WARNING]   - META-INF/services/javax.imageio.spi.ImageWriterSpi
+[WARNING]   - com.github.jaiimageio.impl.common.BitFile
+[WARNING]   - com.github.jaiimageio.impl.common.BogusColorSpace
+[WARNING]   - com.github.jaiimageio.impl.common.I18N
+[WARNING]   - com.github.jaiimageio.impl.common.I18NImpl
+[WARNING]   - 335 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, eventbus-3.2.0.jar define 50 overlapping classes: 
+[WARNING]   - org.greenrobot.eventbus.AsyncPoster
+[WARNING]   - org.greenrobot.eventbus.BackgroundPoster
+[WARNING]   - org.greenrobot.eventbus.EventBus
+[WARNING]   - org.greenrobot.eventbus.EventBus$1
+[WARNING]   - org.greenrobot.eventbus.EventBus$2
+[WARNING]   - org.greenrobot.eventbus.EventBus$PostCallback
+[WARNING]   - org.greenrobot.eventbus.EventBus$PostingThreadState
+[WARNING]   - org.greenrobot.eventbus.EventBusBuilder
+[WARNING]   - org.greenrobot.eventbus.EventBusException
+[WARNING]   - org.greenrobot.eventbus.HandlerPoster
+[WARNING]   - 40 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, ikonli-fontawesome5-pack-11.4.0.jar define 21 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-fontawesome5-pack/pom.properties
+[WARNING]   - META-INF/maven/org.kordamp.ikonli/ikonli-fontawesome5-pack/pom.xml
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-brands.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-brands.min.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-regular.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-regular.min.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-solid.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fa-solid.min.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fontawesome-all.css
+[WARNING]   - META-INF/resources/fontawesome5/5.8.1/css/fontawesome-all.min.css
+[WARNING]   - 11 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, commons-1.3.4.jar define 237 overlapping classes: 
+[WARNING]   - io.vproxy.base.Config
+[WARNING]   - io.vproxy.base.GlobalInspection
+[WARNING]   - io.vproxy.base.connection.Protocol
+[WARNING]   - io.vproxy.base.dns.DnsServerListGetter
+[WARNING]   - io.vproxy.base.dns.dnsserverlistgetter.GetDnsServerListDefault
+[WARNING]   - io.vproxy.base.dns.dnsserverlistgetter.GetDnsServerListFromConfigFile
+[WARNING]   - io.vproxy.base.prometheus.Counter
+[WARNING]   - io.vproxy.base.prometheus.Gauge
+[WARNING]   - io.vproxy.base.prometheus.GaugeF
+[WARNING]   - io.vproxy.base.prometheus.Metric
+[WARNING]   - 227 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, stax-ex-1.8.jar define 26 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.jvnet.staxex/stax-ex/pom.properties
+[WARNING]   - META-INF/maven/org.jvnet.staxex/stax-ex/pom.xml
+[WARNING]   - org.jvnet.staxex.Base64Data
+[WARNING]   - org.jvnet.staxex.Base64Data$1
+[WARNING]   - org.jvnet.staxex.Base64Data$Base64DataSource
+[WARNING]   - org.jvnet.staxex.Base64Data$Base64StreamingDataHandler
+[WARNING]   - org.jvnet.staxex.Base64Data$FilterDataHandler
+[WARNING]   - org.jvnet.staxex.Base64Encoder
+[WARNING]   - org.jvnet.staxex.Base64EncoderStream
+[WARNING]   - org.jvnet.staxex.BinaryText
+[WARNING]   - 16 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, mysql-connector-java-8.0.19.jar define 1002 overlapping classes and resources: 
+[WARNING]   - META-INF/INFO_BIN
+[WARNING]   - META-INF/INFO_SRC
+[WARNING]   - META-INF/services/java.sql.Driver
+[WARNING]   - com.mysql.cj.AbstractPreparedQuery
+[WARNING]   - com.mysql.cj.AbstractQuery
+[WARNING]   - com.mysql.cj.AbstractQueryBindings
+[WARNING]   - com.mysql.cj.AbstractQueryBindings$1
+[WARNING]   - com.mysql.cj.AppendingBatchVisitor
+[WARNING]   - com.mysql.cj.BatchVisitor
+[WARNING]   - com.mysql.cj.BindValue
+[WARNING]   - 992 more...
+[WARNING] AnimateFX-1.2.0.jar, FastInfoset-1.2.15.jar, activation-1.1.jar, antlr-2.7.7.jar, byte-buddy-1.11.20.jar, classmate-1.5.1.jar, client-0.0.1-SNAPSHOT.jar, commons-1.3.4.jar, core-3.4.1.jar, datafx-8.0.7.jar, entities-0.0.1-SNAPSHOT.jar, eventbus-3.2.0.jar, fontawesomefx-commons-9.1.2.jar, fontawesomefx-fontawesome-4.7.0-9.1.2.jar, gson-2.8.9.jar, hibernate-commons-annotations-5.1.2.Final.jar, hibernate-core-5.6.1.Final.jar, hibernate-entitymanager-5.6.1.Final.jar, ikonli-core-11.4.0.jar, ikonli-fontawesome5-pack-11.4.0.jar, ikonli-javafx-11.4.0.jar, istack-commons-runtime-3.0.7.jar, itextpdf-5.5.13.4.jar, jai-imageio-core-1.4.0.jar, jakarta.persistence-api-2.2.3.jar, jandex-2.2.3.Final.jar, javafx-base-22-win.jar, javafx-base-22.jar, javafx-controls-22-win.jar, javafx-controls-22.jar, javafx-fxml-22-win.jar, javafx-fxml-22.jar, javafx-graphics-22-win.jar, javafx-graphics-22.jar, javase-3.4.1.jar, javax.activation-api-1.2.0.jar, javax.mail-1.6.2.jar, javax.persistence-api-2.2.jar, jaxb-api-2.3.1.jar, jaxb-runtime-2.3.1.jar, jboss-logging-3.4.2.Final.jar, jboss-transaction-api_1.2_spec-1.1.1.Final.jar, jcommander-1.78.jar, jfoenix-9.0.10.jar, jnativehook-2.2.2.jar, json-20231013.jar, kotlin-stdlib-lite-1.0.2-jdk9.jar, mysql-connector-java-8.0.19.jar, protobuf-java-3.6.1.jar, server-0.0.1-SNAPSHOT.jar, stax-ex-1.8.jar, txw2-2.3.1.jar, vfx-1.4.0.jar, vjson-1.5.5-jdk9.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/MANIFEST.MF
+[WARNING] client-0.0.1-SNAPSHOT.jar, entities-0.0.1-SNAPSHOT.jar define 65 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/il.cshaifasweng.OCSFMediatorExample/entities/pom.properties
+[WARNING]   - META-INF/maven/il.cshaifasweng.OCSFMediatorExample/entities/pom.xml
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Complaint
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Employee
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Employee$EmployeeType
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Hall
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.HomeViewingPackageInstance
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Messages.ComplaintMessage
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Messages.ComplaintMessage$RequestType
+[WARNING]   - il.cshaifasweng.OCSFMediatorExample.entities.Messages.ComplaintMessage$ResponseType
+[WARNING]   - 55 more...
+[WARNING] byte-buddy-1.11.20.jar, classmate-1.5.1.jar, client-0.0.1-SNAPSHOT.jar, ikonli-core-11.4.0.jar, ikonli-fontawesome5-pack-11.4.0.jar, ikonli-javafx-11.4.0.jar, jai-imageio-core-1.4.0.jar, mysql-connector-java-8.0.19.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/LICENSE
+[WARNING] client-0.0.1-SNAPSHOT.jar, hibernate-core-5.6.1.Final.jar define 4931 overlapping classes and resources: 
+[WARNING]   - META-INF/services/javax.persistence.spi.PersistenceProvider
+[WARNING]   - org.hibernate.AnnotationException
+[WARNING]   - org.hibernate.AssertionFailure
+[WARNING]   - org.hibernate.BaseSessionEventListener
+[WARNING]   - org.hibernate.BasicQueryContract
+[WARNING]   - org.hibernate.Cache
+[WARNING]   - org.hibernate.CacheMode
+[WARNING]   - org.hibernate.CallbackException
+[WARNING]   - org.hibernate.ConnectionAcquisitionMode
+[WARNING]   - org.hibernate.ConnectionReleaseMode
+[WARNING]   - 4921 more...
+[WARNING] activation-1.1.jar, client-0.0.1-SNAPSHOT.jar define 13 overlapping classes and resources: 
+[WARNING]   - META-INF/mailcap.default
+[WARNING]   - META-INF/mimetypes.default
+[WARNING]   - com.sun.activation.registries.LineTokenizer
+[WARNING]   - com.sun.activation.registries.LogSupport
+[WARNING]   - com.sun.activation.registries.MailcapFile
+[WARNING]   - com.sun.activation.registries.MailcapParseException
+[WARNING]   - com.sun.activation.registries.MailcapTokenizer
+[WARNING]   - com.sun.activation.registries.MimeTypeEntry
+[WARNING]   - com.sun.activation.registries.MimeTypeFile
+[WARNING]   - com.sun.activation.viewers.ImageViewer
+[WARNING]   - 3 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, txw2-2.3.1.jar define 55 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.glassfish.jaxb/txw2/pom.properties
+[WARNING]   - META-INF/maven/org.glassfish.jaxb/txw2/pom.xml
+[WARNING]   - com.sun.xml.txw2.Attribute
+[WARNING]   - com.sun.xml.txw2.Cdata
+[WARNING]   - com.sun.xml.txw2.Comment
+[WARNING]   - com.sun.xml.txw2.ContainerElement
+[WARNING]   - com.sun.xml.txw2.Content
+[WARNING]   - com.sun.xml.txw2.ContentVisitor
+[WARNING]   - com.sun.xml.txw2.DatatypeWriter
+[WARNING]   - com.sun.xml.txw2.DatatypeWriter$1
+[WARNING]   - 45 more...
+[WARNING] activation-1.1.jar, client-0.0.1-SNAPSHOT.jar, javax.activation-api-1.2.0.jar define 27 overlapping classes: 
+[WARNING]   - javax.activation.ActivationDataFlavor
+[WARNING]   - javax.activation.CommandInfo
+[WARNING]   - javax.activation.CommandMap
+[WARNING]   - javax.activation.CommandObject
+[WARNING]   - javax.activation.DataContentHandler
+[WARNING]   - javax.activation.DataContentHandlerFactory
+[WARNING]   - javax.activation.DataHandler
+[WARNING]   - javax.activation.DataHandler$1
+[WARNING]   - javax.activation.DataHandlerDataSource
+[WARNING]   - javax.activation.DataSource
+[WARNING]   - 17 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jaxb-api-2.3.1.jar define 116 overlapping classes and resources: 
+[WARNING]   - META-INF.versions.9.javax.xml.bind.ModuleUtil
+[WARNING]   - META-INF/maven/javax.xml.bind/jaxb-api/pom.properties
+[WARNING]   - META-INF/maven/javax.xml.bind/jaxb-api/pom.xml
+[WARNING]   - javax.xml.bind.Binder
+[WARNING]   - javax.xml.bind.ContextFinder
+[WARNING]   - javax.xml.bind.ContextFinder$1
+[WARNING]   - javax.xml.bind.ContextFinder$2
+[WARNING]   - javax.xml.bind.ContextFinder$3
+[WARNING]   - javax.xml.bind.ContextFinder$4
+[WARNING]   - javax.xml.bind.ContextFinder$5
+[WARNING]   - 106 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javax.mail-1.6.2.jar define 349 overlapping classes and resources: 
+[WARNING]   - META-INF/gfprobe-provider.xml
+[WARNING]   - META-INF/hk2-locator/default
+[WARNING]   - META-INF/javamail.charset.map
+[WARNING]   - META-INF/javamail.default.address.map
+[WARNING]   - META-INF/javamail.default.providers
+[WARNING]   - META-INF/mailcap
+[WARNING]   - META-INF/maven/com.sun.mail/javax.mail/pom.properties
+[WARNING]   - META-INF/maven/com.sun.mail/javax.mail/pom.xml
+[WARNING]   - META-INF/services/javax.mail.Provider
+[WARNING]   - com.sun.mail.auth.MD4
+[WARNING]   - 339 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jnativehook-2.2.2.jar define 115 overlapping classes and resources: 
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.AbstractSwingInputAdapter
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.DefaultLibraryLocator
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.GlobalScreen
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.GlobalScreen$EventDispatchTask
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.GlobalScreen$NativeHookThread
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.NativeHookException
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.NativeInputEvent
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.NativeLibraryLocator
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.NativeMonitorInfo
+[WARNING]   - META-INF.versions.11.com.github.kwhat.jnativehook.NativeSystem
+[WARNING]   - 105 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, javax.persistence-api-2.2.jar define 2 overlapping resources: 
+[WARNING]   - META-INF/maven/javax.persistence/javax.persistence-api/pom.properties
+[WARNING]   - META-INF/maven/javax.persistence/javax.persistence-api/pom.xml
+[WARNING] client-0.0.1-SNAPSHOT.jar, hibernate-commons-annotations-5.1.2.Final.jar define 69 overlapping classes and resources: 
+[WARNING]   - org.hibernate.annotations.common.AssertionFailure
+[WARNING]   - org.hibernate.annotations.common.Version
+[WARNING]   - org.hibernate.annotations.common.annotationfactory.AnnotationDescriptor
+[WARNING]   - org.hibernate.annotations.common.annotationfactory.AnnotationFactory
+[WARNING]   - org.hibernate.annotations.common.annotationfactory.AnnotationProxy
+[WARNING]   - org.hibernate.annotations.common.annotationfactory.AnnotationProxy$1
+[WARNING]   - org.hibernate.annotations.common.reflection.AnnotationReader
+[WARNING]   - org.hibernate.annotations.common.reflection.ClassLoaderDelegate
+[WARNING]   - org.hibernate.annotations.common.reflection.ClassLoadingException
+[WARNING]   - org.hibernate.annotations.common.reflection.Filter
+[WARNING]   - 59 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, gson-2.8.9.jar define 197 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/com.google.code.gson/gson/pom.properties
+[WARNING]   - META-INF/maven/com.google.code.gson/gson/pom.xml
+[WARNING]   - com.google.gson.ExclusionStrategy
+[WARNING]   - com.google.gson.FieldAttributes
+[WARNING]   - com.google.gson.FieldNamingPolicy
+[WARNING]   - com.google.gson.FieldNamingPolicy$1
+[WARNING]   - com.google.gson.FieldNamingPolicy$2
+[WARNING]   - com.google.gson.FieldNamingPolicy$3
+[WARNING]   - com.google.gson.FieldNamingPolicy$4
+[WARNING]   - com.google.gson.FieldNamingPolicy$5
+[WARNING]   - 187 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, jboss-transaction-api_1.2_spec-1.1.1.Final.jar define 21 overlapping classes and resources: 
+[WARNING]   - META-INF/maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/pom.properties
+[WARNING]   - META-INF/maven/org.jboss.spec.javax.transaction/jboss-transaction-api_1.2_spec/pom.xml
+[WARNING]   - javax.transaction.HeuristicCommitException
+[WARNING]   - javax.transaction.HeuristicMixedException
+[WARNING]   - javax.transaction.HeuristicRollbackException
+[WARNING]   - javax.transaction.InvalidTransactionException
+[WARNING]   - javax.transaction.NotSupportedException
+[WARNING]   - javax.transaction.RollbackException
+[WARNING]   - javax.transaction.Status
+[WARNING]   - javax.transaction.Synchronization
+[WARNING]   - 11 more...
+[WARNING] client-0.0.1-SNAPSHOT.jar, kotlin-stdlib-lite-1.0.2-jdk9.jar define 35 overlapping classes: 
+[WARNING]   - kotlin.Deprecated
+[WARNING]   - kotlin.ExtensionFunctionType
+[WARNING]   - kotlin.Function
+[WARNING]   - kotlin.KotlinVersion
+[WARNING]   - kotlin.Metadata
+[WARNING]   - kotlin.NoWhenBranchMatchedException
+[WARNING]   - kotlin.NotImplementedError
+[WARNING]   - kotlin.Pair
+[WARNING]   - kotlin.UninitializedPropertyAccessException
+[WARNING]   - kotlin.Unit
+[WARNING]   - 25 more...
+[WARNING] byte-buddy-1.11.20.jar, classmate-1.5.1.jar, client-0.0.1-SNAPSHOT.jar, jai-imageio-core-1.4.0.jar define 1 overlapping resources: 
+[WARNING]   - META-INF/NOTICE
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://maven.apache.org/plugins/maven-shade-plugin/
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\target\client-0.0.1-SNAPSHOT.jar with C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\target\client-0.0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- install:2.5.2:install (default-install) @ client ---
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\target\client-0.0.1-SNAPSHOT.jar to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\client\0.0.1-SNAPSHOT\client-0.0.1-SNAPSHOT.jar
+[INFO] Installing C:\Users\viraj\OneDrive\Desktop\Hasertia_Project-main\client\dependency-reduced-pom.xml to C:\Users\viraj\.m2\repository\il\cshaifasweng\OCSFMediatorExample\client\0.0.1-SNAPSHOT\client-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for OCSFMediatorExample 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] OCSFMediatorExample ................................ SUCCESS [  0.309 s]
+[INFO] entities ........................................... SUCCESS [  1.177 s]
+[INFO] server ............................................. SUCCESS [  7.377 s]
+[INFO] client ............................................. SUCCESS [  4.666 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.655 s
+[INFO] Finished at: 2026-03-26T01:05:46+05:30
+[INFO] ------------------------------------------------------------------------

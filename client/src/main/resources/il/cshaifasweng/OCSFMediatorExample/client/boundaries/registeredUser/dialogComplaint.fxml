@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pnCustomerArea" style="-fx-background-color: #FFFFFF; -fx-border-color: #3a1c9d; -fx-border-width: 2px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.registeredUser.DialogComplaint">
+   <children>
+      <VBox alignment="CENTER" layoutX="6.0" layoutY="6.0" prefHeight="325.0" prefWidth="692.0" spacing="15.0" style="-fx-background-color: #FFFFFF; -fx-padding: 20;">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #3a1c9d; -fx-background-radius: 10px 10px 0 0;">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="673.0" style="-fx-text-fill: white; -fx-padding: 10; -fx-font-size: 18;" text="Customer - Purchase Details" />
+                  <Button fx:id="btnClose" mnemonicParsing="false" onAction="#closeCustomerArea" style="-fx-background-color: transparent; -fx-text-fill: white;" styleClass="button-close" text="x">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+
+            <VBox alignment="CENTER" prefHeight="242.0" prefWidth="652.0" spacing="15.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+
+                  <!-- Common Fields -->
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="156.0" text="Purchase:" textFill="#4d4c4c">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Label>
+                        <TextField fx:id="purchaseTypeField" editable="false" prefHeight="27.0" prefWidth="251.0" style="-fx-pref-width: 250; -fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;" />
+                     </children>
+                  </HBox>
+
+                  <HBox prefHeight="143.0" prefWidth="652.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="156.0" text="Complaint Reason:" textFill="#4d4c4c">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font></Label>
+                        <TextArea fx:id="additionalCommentsArea" prefColumnCount="20" prefHeight="113.0" prefRowCount="2" prefWidth="484.0" style="-fx-background-color: #F7F7F7; -fx-border-color: #3a1c9d;" />
+                     </children>
+                  </HBox>
+
+                  <Separator style="-fx-background-color: #4d4c4c;" />
+
+                  <Button fx:id="btnSend" onAction="#handleSubmitComplaint" style="-fx-background-color: #3a1c9d; -fx-font-size: 16; -fx-text-fill: #FFFFFF; -fx-border-radius: 5px;" text="Submit Complaint" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

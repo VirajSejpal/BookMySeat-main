@@ -1,0 +1,66 @@
+#complaintPane {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-color: #f0f0f0;
+}
+
+
+#complaint-content-pane {
+    -fx-padding: 30px;
+    -fx-background-color: #cae8fb;
+}
+
+#complaint-section-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+    -fx-padding-bottom: 20px;
+}
+
+#complaint-package-container {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+#complaint-form-grid {
+    -fx-hgap: 20; /* Increased spacing for better visibility */
+    -fx-vgap: 20;
+}
+
+#complaint-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #3a3a3a;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(to right, #e0e0e0, #f7f7f7);
+    -fx-padding: 5px 10px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+    -fx-min-width: 160px;
+    -fx-max-width: 160px;
+}
+
+#complaint-button-primary {
+    -fx-background-color: #ffc500;
+    -fx-text-fill: #161438;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30 10 30;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.text-field, .text-area {
+    -fx-pref-width: 300px;
+    -fx-font-size: 14px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+    -fx-padding: 5px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}

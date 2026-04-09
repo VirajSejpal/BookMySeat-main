@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="stkpanel" prefHeight="316.0" prefWidth="222.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.user.MovieSmallBoundary">
+   <children>
+      <Pane fx:id="imagePanel" prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fx:id="image" fitHeight="286.0" fitWidth="200.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../../server/movies/TheLionKing.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="contentPanel" cache="true" prefHeight="275.0" prefWidth="187.0" visible="false">
+         <children>
+            <BorderPane layoutX="11.0" layoutY="15.0" prefHeight="287.0" prefWidth="196.0" style="-fx-background-color: #cae8fb;">
+               <top>
+                  <Text fx:id="title" fill="#1d1d48" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Movie name" textAlignment="CENTER" wrappingWidth="170.0" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+               </top>
+               <center>
+                  <Label fx:id="info" alignment="CENTER" prefHeight="176.0" prefWidth="170.0" text="The plot follows Simba, a young lion who must embrace his role as the rightful king of his homeland following the murder of his father, Mufasa, at the hands of his uncle, Scar." textAlignment="CENTER" textFill="#1d1d48" wrapText="true" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </center>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <bottom>
+                  <VBox alignment="CENTER" prefHeight="63.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnBook" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToSelect" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #dc2742;" styleClass="button-book" text="BOOK NOW" textFill="WHITE">
+                           <stylesheets>
+                              <URL value="@../../css/main.css" />
+                           </stylesheets>
+                        </Button>
+                        <Button fx:id="btnInfo" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToInfo" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #1d1d48;" styleClass="button-info" text="INFO" textFill="WHITE">
+                           <stylesheets>
+                              <URL value="@../../css/main.css" />
+                           </stylesheets>
+                        </Button>
+                     </children>
+                  </VBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </Pane>
+      <Pane fx:id="selectTheaterPane" cache="true" prefHeight="292.0" prefWidth="191.0" visible="false">
+         <children>
+            <BorderPane layoutX="11.0" layoutY="15.0" prefHeight="287.0" prefWidth="196.0" style="-fx-background-color: #dc2742;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="48.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="21.0" prefWidth="196.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="BOOK TICKET TO |" wrappingWidth="162.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btnCloseTheater" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#cleanup" prefHeight="21.0" prefWidth="23.0" styleClass="button-close" text="X" textFill="WHITE">
+                                 <stylesheets>
+                                    <URL value="@../../css/main.css" />
+                                 </stylesheets>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Text fx:id="txtMovieTheater" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Movie name" wrappingWidth="191.0" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="5.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <bottom>
+                  <VBox alignment="CENTER" prefHeight="43.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="btnPayTheater" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" styleClass="button-book" text="BOOK NOW" textFill="WHITE">
+                           <stylesheets>
+                              <URL value="@../../css/main.css" />
+                           </stylesheets>
+                        </Button>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <VBox alignment="CENTER" prefHeight="133.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ComboBox fx:id="cmbCinema" prefWidth="150.0" promptText="Choose Theater" style="-fx-background-color: #cae8fb;" />
+                        <ComboBox fx:id="cmbDate" prefHeight="21.0" prefWidth="150.0" promptText="Choose Date" style="-fx-background-color: transparent;"  />
+                        <ComboBox fx:id="cmbHour" prefWidth="150.0" promptText="Choose Hour" style="-fx-background-color: transparent;"   />
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </children>
+      </Pane>
+      <Pane fx:id="selectHvPanel" cache="true" prefHeight="300.0" prefWidth="192.0" visible="false">
+         <children>
+            <BorderPane layoutX="13.0" layoutY="15.0" prefHeight="287.0" prefWidth="196.0" style="-fx-background-color: #dc2742;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <top>
+                  <VBox alignment="CENTER" prefHeight="67.0" prefWidth="196.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="17.0" prefWidth="196.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="BOOK HOME PACKAGE TO |" wrappingWidth="160.0">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="btnCloseHV" mnemonicParsing="false" styleClass="button-close" text="X" textFill="WHITE">
+                                 <stylesheets>
+                                    <URL value="@../../css/main.css" />
+                                 </stylesheets>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <Text fx:id="txtMovieHV" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Movie name" wrappingWidth="183.0" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="10.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </top>
+               <center>
+                  <VBox alignment="CENTER" prefHeight="171.0" prefWidth="196.0" spacing="40.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <DatePicker fx:id="cmbDateHv" onAction="#setHVDate" prefHeight="25.0" prefWidth="166.0" promptText="Choose Date" />
+                        <ComboBox fx:id="cmbHourHv" prefHeight="25.0" prefWidth="166.0" promptText="Choose Time" style="-fx-background-color: #ec4c66;"  />
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <Button fx:id="btnPayHV" mnemonicParsing="false" styleClass="button-book" text="BOOK NOW" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                     </stylesheets>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" />
+                     </BorderPane.margin>
+                  </Button>
+               </bottom>
+            </BorderPane>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

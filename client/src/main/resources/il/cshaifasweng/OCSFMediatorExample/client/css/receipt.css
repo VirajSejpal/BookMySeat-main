@@ -1,0 +1,82 @@
+/* Styles for the Receipt Pane */
+.receipt-pane {
+    -fx-spacing: 8; /* Moderate spacing between child elements */
+    -fx-alignment: top-center; /* Aligns the content to the top center */
+    -fx-border-color: black; /* Border color around the receipt */
+    -fx-border-width: 1; /* Border width around the receipt */
+    -fx-font-family: "Courier New", monospace; /* Monospaced font for consistent text alignment */
+    -fx-font-size: 16; /* Moderate default font size for the receipt text */
+}
+
+/* Title styles */
+.confirmation-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif; /* Unique font for the title */
+    -fx-font-size: 24px; /* Moderately large font size for the title */
+    -fx-font-weight: bold; /* Bold font weight for the title */
+    -fx-text-fill: #28a745; /* Green color for the title text */
+}
+
+
+
+/* Header styles */
+.header-title {
+    -fx-font-size: 20; /* Moderately large font size for the header title */
+    -fx-font-weight: bold; /* Bold font weight for the header title */
+    -fx-font-family: "Courier New", monospace; /* Ensure monospaced font for consistency */
+}
+
+.header-subtitle {
+    -fx-font-size: 18; /* Moderate font size for the header subtitle */
+    -fx-font-family: "Courier New", monospace; /* Ensure monospaced font for consistency */
+}
+
+/* Divider line styles */
+.divider-line {
+    -fx-stroke: black; /* Color of the divider lines */
+    -fx-stroke-width: 1; /* Width of the divider lines */
+}
+
+/* Divider text styles */
+.divider-text {
+    -fx-font-family: 'Courier New';
+    -fx-font-size: 14; /* Moderate font size for divider text */
+    -fx-text-fill: black; /* Color of the divider text */
+}
+
+/* Details section styles */
+.details-label, .details-section .details-value, .details-section .details-movie {
+    -fx-font-family: "Courier New", monospace; /* Monospaced font for consistent text alignment */
+    -fx-font-size: 14; /* Moderate font size for the details */
+}
+
+/* Ticket section styles */
+.ticket-header {
+    -fx-font-family: "Courier New", monospace; /* Monospaced font for consistent text alignment */
+    -fx-font-size: 14; /* Moderate font size for the ticket headers */
+    -fx-font-weight: bold; /* Bold font weight for ticket headers */
+}
+
+.ticket-item, .ticket-section .ticket-price {
+    -fx-font-family: "Courier New", monospace; /* Monospaced font for consistent text alignment */
+    -fx-font-size: 14; /* Moderate font size for the ticket items */
+}
+
+/* Summary section styles */
+.summary-label, .summary-section .summary-value {
+    -fx-font-family: "Courier New", monospace; /* Monospaced font for consistent text alignment */
+    -fx-font-size: 16; /* Moderate font size for the summary */
+    -fx-font-weight: bold; /* Bold font weight for summary totals */
+}
+
+/* Footer section styles */
+.footer-section .footer-text {
+    -fx-text-fill: #1d1d48; /* Green color for the title text */
+    -fx-font-size: 16; /* Moderately large font size for the header title */
+    -fx-font-weight: bold; /* Bold font weight for the header title */
+    -fx-font-family: 'Segoe UI', Arial, sans-serif; /* Unique font for the title */
+}
+.grid-receipt {
+    -fx-padding: 30px;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}

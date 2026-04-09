@@ -1,0 +1,148 @@
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.step-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-background-color: #1d1d48;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 50%;
+}
+
+.step-text {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.movie-info {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.movie-info-separator {
+    -fx-text-fill: #ffc500;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.content-pane {
+    -fx-padding: 30px;
+}
+
+.section-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1d1d48;
+}
+
+.screen-container {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 5);
+}
+
+.screen-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.legend-container {
+    -fx-background-color: rgba(255,255,255,0.7);
+    -fx-padding: 10px;
+    -fx-background-radius: 5px;
+}
+
+.legend-label {
+    -fx-padding: 5 10 5 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.available-seat { -fx-background-color: #4caf50; }
+.selected-seat { -fx-background-color: #e72241; }
+.reserved-seat { -fx-background-color: #838f97; }
+
+.button-primary {
+    -fx-background-color: #ffc500;
+    -fx-text-fill: #1d1d48;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5px;
+}
+
+.button-secondary {
+    -fx-background-color: #1d1d48;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5px;
+}
+
+.label-large {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.spinner-large .text-field {
+    -fx-font-size: 16px;
+    -fx-pref-width: 60px;
+}
+
+.sub-pane {
+    -fx-background-color: rgba(255,255,255,0.9);
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 3);
+}
+
+.timer-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+}
+
+.confirmation-title {
+    -fx-text-fill: #4caf50;
+}
+
+.confirmation-details, .confirmation-price {
+    -fx-font-size: 18px;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #1d1d48;
+}
+
+
+.text-field, .combo-box {
+    -fx-pref-width: 180px;
+}
+
+.text-field, .combo-box {
+    -fx-font-size: 14px;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+#expirationMonthCombo, #expirationYearCombo {
+    -fx-pref-width: 85px;
+}
+
+.check-box {
+    -fx-padding: 10 0 10 0;
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="798.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.boundaries.user.MovieInfoBoundary">
+   <children>
+      <AnchorPane prefHeight="449.0" prefWidth="799.0" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Pane prefHeight="460.0" prefWidth="798.0" style="-fx-background-color: linear-gradient(to bottom, #f5f7fa, #c3cfe2);">
+               <children>
+                  <Pane fx:id="paneContainer" layoutX="486.0" layoutY="45.0" prefHeight="365.0" prefWidth="268.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <children>
+                        <HBox fx:id="imageContainer" alignment="CENTER" layoutX="-26.0" layoutY="1.0" maxWidth="352.0" prefHeight="395.0" prefWidth="328.0">
+                           <children>
+                              <ImageView fx:id="image" fitHeight="250.0" fitWidth="328.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 10, 0, 0, 5);">
+                                 <image>
+                                    <Image url="@../../../../../../../../../../server/movies/empty-image.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="6.0" layoutY="167.0" prefHeight="66.0" prefWidth="411.0">
+                     <children>
+                        <Label layoutX="58.0" layoutY="14.0" text="PRODUCER" textFill="#1d1d48">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblProducer" layoutX="55.0" layoutY="34.0" text=" Walt Disney Pictures " textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/general/camera.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="6.0" layoutY="228.0" prefHeight="81.0" prefWidth="411.0">
+                     <children>
+                        <Label layoutX="58.0" layoutY="6.0" text="PRICE" textFill="#1d1d48">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="theaterPrice" layoutX="162.0" layoutY="26.0" text="price here" textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="26.0" prefHeight="17.0" prefWidth="50.0" text="Theater" textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="homePrice" layoutX="162.0" layoutY="48.0" text="price here" textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="58.0" layoutY="49.0" prefHeight="17.0" prefWidth="84.0" text="Home Viewing" textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="16.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/general/camera.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="6.0" layoutY="115.0" prefHeight="66.0" prefWidth="442.0">
+                     <children>
+                        <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/general/camera.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="58.0" layoutY="14.0" text="CAST" textFill="#1d1d48">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblActors" layoutX="58.0" layoutY="33.0" prefHeight="20.0" prefWidth="379.0" text="Donald Glover, Beyoncé " textFill="#4b4b79">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="276.0" layoutY="62.0" prefHeight="66.0" prefWidth="396.0">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="34.0" layoutX="26.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../icons/general/camera.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="69.0" layoutY="4.0" text="DURATION" textFill="#1d1d48">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblDuration" layoutX="67.0" layoutY="22.0" prefHeight="20.0" prefWidth="379.0" text="10" textFill="#4b4b79">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Label fx:id="lblInfo" alignment="TOP_LEFT" layoutX="28.0" layoutY="337.0" prefHeight="118.0" prefWidth="386.0" text="The plot follows Simba, a young lion who must embrace his role as the rightful king of his homeland following the murder of his father, Mufasa, at the hands of his uncle, Scar." textFill="#4b4b79" wrapText="true">
+                     <font>
+                        <Font size="15.5" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="304.0" text="Summary" textFill="#e72241">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblName" alignment="TOP_LEFT" layoutX="21.0" layoutY="24.0" prefHeight="32.0" prefWidth="715.0" text="The Lion King" textFill="#e72241">
+                     <font>
+                        <Font name="System Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Close" layoutX="758.0" layoutY="9.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="27.0" prefWidth="34.0" styleClass="button-close" text="X">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnGenre" layoutX="22.0" layoutY="81.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="212.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

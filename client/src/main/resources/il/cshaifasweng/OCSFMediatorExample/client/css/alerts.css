@@ -1,0 +1,169 @@
+.root .alert-container {
+    -fx-background-color: white;
+}
+
+alert-container {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-padding: 20;
+    -fx-border-width: 3;
+    -fx-alignment: top-center;
+}
+
+.alert-success-border {
+    -fx-border-color: #32bea6;
+    -fx-border-width: 3;
+
+}
+
+.alert-error-border {
+    -fx-border-color: #e04f5f;
+    -fx-border-width: 3;
+
+}
+
+.alert-warning-border {
+    -fx-border-color: #fa5252;
+    -fx-border-width: 3;
+
+}
+
+.alert-information-border {
+    -fx-border-color: #25b7d3;
+    -fx-border-width: 3;
+
+}
+
+.alert-cancel-border {
+    -fx-border-color: #7750f1;
+    -fx-border-width: 3;
+
+}
+
+.alert-button {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 180px;
+    -fx-font-size: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.5, 0, 3);
+    -fx-padding: 10;
+    -fx-border-width: 0;
+}
+
+.alert-information-button {
+    -fx-background-color: linear-gradient(to bottom, #25b7d3, #31b0d5);
+}
+
+.alert-information-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #25b7d3;
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: white; /* Background set to white */
+    -fx-padding: 10;
+}
+
+.alert-information-body {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #25b7d3;
+    -fx-font-size: 15;
+    -fx-line-spacing: 1.5;
+    -fx-text-alignment: center;
+}
+
+.alert-error-button {
+    -fx-background-color: linear-gradient(to bottom, #d9534f, #e04f5f);
+}
+
+.alert-error-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill:#e04f5f;
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: white;
+    -fx-padding: 10;
+}
+
+.alert-error-body {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #e04f5f;
+    -fx-font-size: 15;
+    -fx-line-spacing: 1.5;
+    -fx-text-alignment: center;
+}
+
+.alert-warning-button {
+    -fx-background-color: linear-gradient(to bottom, #fa5252, #fa5252);
+}
+
+.alert-warning-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #fa5252;
+    -fx-font-size: 30;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+.alert-warning-body {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #fa5252;
+    -fx-font-size: 15;
+    -fx-line-spacing: 1.5;
+    -fx-text-alignment: center;
+}
+
+.alert-success-button {
+    -fx-background-color: linear-gradient(to bottom, #32bea6, #32bea6);
+}
+
+.alert-success-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #32bea6;
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: white;
+    -fx-padding: 10;
+}
+
+.alert-success-body {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #32bea6;
+    -fx-font-size: 15;
+    -fx-line-spacing: 1.5;
+    -fx-text-alignment: center;
+}
+
+.alert-cancel-button {
+    -fx-background-color: linear-gradient(to bottom, #7750f1, #7750f1);
+}
+
+.alert-cancel-title {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #7750f1;
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: white; /* Background set to white */
+    -fx-padding: 10;
+}
+
+.alert-cancel-body {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+    -fx-fill: #7750f1;
+    -fx-font-size: 15;
+    -fx-line-spacing: 1.5;
+    -fx-text-alignment: center;
+}
+
+
+.alert-button:pressed {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333;
+    -fx-border-color: #8A2BE2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 12, 0.7, 0, 3);
+}

@@ -1,0 +1,10 @@
+
+
+.floating-label {
+    -fx-font-size: 14px;
+    -fx-fill: grey;
+    -fx-background-color: white;
+    -fx-padding: 0 5;
+    -fx-translate-y: -10;
+    -fx-opacity: 0.8;
+}

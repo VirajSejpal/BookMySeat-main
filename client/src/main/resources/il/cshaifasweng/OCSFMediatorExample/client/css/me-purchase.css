@@ -1,0 +1,154 @@
+.root {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+ }
+
+.step-indicator {
+    -fx-background-color: linear-gradient(to right, #161438, #2e2e85);
+    -fx-padding: 15px;
+}
+
+.step-label {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-background-color: #2e2e85;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 50%;
+}
+
+.step-text {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.content-pane {
+    -fx-padding: 30px;
+    -fx-background-color: linear-gradient(to bottom right, #cae8fb, #ffffff);
+}
+
+.section-title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+}
+
+.package-container {
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 3);
+}
+
+.package-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.package-details {
+    -fx-font-size: 16px;
+}
+
+.highlight-text {
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+}
+
+.button-primary {
+    -fx-background-color: #f3bc00;
+    -fx-text-fill: #161438;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5px;
+}
+
+.button-secondary {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5px;
+}
+
+.form-grid {
+    -fx-hgap: 15;
+    -fx-vgap: 15;
+}
+
+.timer-label {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e72241;
+}
+
+.sub-pane {
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 2);
+}
+
+.sub-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #161438;
+}
+
+.confirmation-title {
+    -fx-text-fill: #28a745;
+}
+
+.confirmation-details, .confirmation-price {
+    -fx-font-size: 18px;
+}
+
+.navigation-bar {
+    -fx-background-color: #cae8fb;
+    -fx-padding: 15px;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #6c757d;
+}
+
+.text-field, .combo-box {
+    -fx-pref-width: 180px;
+}
+
+.text-field, .combo-box {
+    -fx-font-size: 14px;
+}
+
+.combo-box {
+    -fx-background-color: white;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+#expirationMonthCombo, #expirationYearCombo {
+    -fx-pref-width: 85px;
+}
+
+.check-box {
+    -fx-padding: 10 0 10 0;
+}
+.label-large {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
