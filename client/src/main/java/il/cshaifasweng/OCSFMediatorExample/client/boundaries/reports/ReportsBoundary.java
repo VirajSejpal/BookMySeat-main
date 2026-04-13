@@ -80,6 +80,24 @@ public class ReportsBoundary implements Initializable {
         initializeComboBoxes(MultiSalesyearComboBox, MultiSalesmonthComboBox, "MultiEntrySales");
         initializeComboBoxes(TicketSalesyearComboBox, TicketSalesmonthComboBox, "TicketSales");
         initializeComboBoxes(PackageSalesyearComboBox, PackageSalesmonthComboBox, "PackageSales");
+        configureAxes();
+    }
+
+    /**
+     * Configures the axes of all bar charts to prevent label overlap.
+     */
+    private void configureAxes() {
+        configureAxis(ticketSalesBarChart);
+        configureAxis(packageSalesBarChart);
+        configureAxis(multiEntryTicketSalesBarChart);
+        configureAxis(complaintStatusBarChart);
+    }
+
+    private void configureAxis(BarChart<String, Number> chart) {
+        if (chart.getXAxis() instanceof javafx.scene.chart.CategoryAxis) {
+            javafx.scene.chart.CategoryAxis xAxis = (javafx.scene.chart.CategoryAxis) chart.getXAxis();
+            xAxis.setTickLabelRotation(45);
+        }
     }
 
     /**

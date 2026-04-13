@@ -4,6 +4,7 @@ import il.cshaifasweng.OCSFMediatorExample.entities.Messages.LoginMessage;
 import il.cshaifasweng.OCSFMediatorExample.entities.Messages.Message;
 import il.cshaifasweng.OCSFMediatorExample.entities.RegisteredUser;
 import il.cshaifasweng.OCSFMediatorExample.server.ocsf.ConnectionToClient;
+import il.cshaifasweng.OCSFMediatorExample.server.scheduler.OrderScheduler;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
@@ -43,6 +44,9 @@ public class LoginHandler extends MessageHandler {
                     session.update(user);
                     session.flush();
                     message.responseType = LoginMessage.ResponseType.LOGIN_SUCCESFUL;
+
+                    // Send login notification email
+                    OrderScheduler.getInstance().scheduleLoginEmail(user);
                 }
             } else {
                 message.responseType = LoginMessage.ResponseType.LOGIN_FAILED;

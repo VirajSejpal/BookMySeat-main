@@ -331,8 +331,8 @@ public class DialogEditMovie implements Initializable {
             return false;
         }
 
-        // Check if only Hebrew letters are allowed
-        if (!txtHebrewName.getText().trim().matches("[\\p{L}0-9 ,.!'&:\\-]+")) {
+        // Check if valid letters (including Unicode marks/matras) are allowed
+        if (!txtHebrewName.getText().trim().matches("[\\p{L}\\p{M}0-9 ,.!'&:\\-]+")) {
             NotificationsBuilder.create(NotificationType.ERROR, "Only valid letters are allowed", containerAddProduct);
             showErrorAndFocus(txtHebrewName);
             return false;

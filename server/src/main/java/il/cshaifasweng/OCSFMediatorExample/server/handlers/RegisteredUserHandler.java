@@ -4,6 +4,7 @@ import il.cshaifasweng.OCSFMediatorExample.entities.Messages.Message;
 import il.cshaifasweng.OCSFMediatorExample.entities.Messages.RegisteredUserMessage;
 import il.cshaifasweng.OCSFMediatorExample.entities.RegisteredUser;
 import il.cshaifasweng.OCSFMediatorExample.server.ocsf.ConnectionToClient;
+import il.cshaifasweng.OCSFMediatorExample.server.scheduler.OrderScheduler;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
@@ -80,6 +81,9 @@ public class RegisteredUserHandler extends MessageHandler
             message.responseType = RegisteredUserMessage.ResponseType.USER_ADDED;
 
             message.registeredUser = new_user;
+
+            // Send welcome email to the new user
+            OrderScheduler.getInstance().scheduleWelcomeEmail(new_user);
         }
         else
         {

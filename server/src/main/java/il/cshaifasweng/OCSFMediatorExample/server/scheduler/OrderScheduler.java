@@ -271,6 +271,59 @@ public class OrderScheduler {
     }
 
     /**
+     * Schedules a welcome email to be sent to the new user.
+     *
+     * @param user The new user to whom the welcome email should be sent.
+     */
+    public void scheduleWelcomeEmail(RegisteredUser user) {
+        System.out.println(ANSI_BLUE + CLASS_NAME + "Scheduling welcome email for user: " + user.getName() + ANSI_RESET);
+        emailExecutor.submit(() -> sendWelcomeEmail(user));
+    }
+
+    private void sendWelcomeEmail(RegisteredUser user) {
+        String welcomeMessage = String.format("Dear %s,\n\n" +
+                        "Welcome to BookMySeat! We are thrilled to have you as a registered member.\n\n" +
+                        "As a registered user, you can easily book movie tickets, purchase home viewing packages, " +
+                        "and manage your orders directly from your account. Keep an eye on your inbox for exciting " +
+                        "updates and new movie releases.\n\n" +
+                        "If you have any questions or need assistance, feel free to contact our support team.\n\n" +
+                        "Thank you for joining us!\n\nBest regards,\nBookMySeat Team",
+                user.getName());
+
+        System.out.println(ANSI_BLUE + "Sending welcome email to " + user.getEmail() + ANSI_RESET);
+        EmailSender.sendEmail(user.getEmail(), "Welcome to BookMySeat!", welcomeMessage);
+
+        // Optionally, email the company
+        EmailSender.sendEmail("bookmyseatofficial@gmail.com", "New User Registered: " + user.getName(), welcomeMessage);
+    }
+
+    /**
+     * Schedules a login notification email to be sent to the user.
+     *
+     * @param user The user who has logged in.
+     */
+    public void scheduleLoginEmail(RegisteredUser user) {
+        System.out.println(ANSI_BLUE + CLASS_NAME + "Scheduling login notification email for user: " + user.getName() + ANSI_RESET);
+        emailExecutor.submit(() -> sendLoginEmail(user));
+    }
+
+    private void sendLoginEmail(RegisteredUser user) {
+        String loginMessage = String.format("Dear %s,\n\n" +
+                        "This is a notification that your account on BookMySeat has just been accessed.\n\n" +
+                        "If this was you, you can safely ignore this email. However, if you did not login recently, " +
+                        "please contact our support team immediately as your account security might be compromised.\n\n" +
+                        "Login Time: %s\n\n" +
+                        "Best regards,\nBookMySeat Security Team",
+                user.getName(), LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+
+        System.out.println(ANSI_BLUE + "Sending login notification email to " + user.getEmail() + ANSI_RESET);
+        EmailSender.sendEmail(user.getEmail(), "Security Alert: New Login to BookMySeat", loginMessage);
+
+        // Optionally, email the company
+        EmailSender.sendEmail("bookmyseatofficial@gmail.com", "User Login Notification: " + user.getName(), loginMessage);
+    }
+
+    /**
      * Sends a cancellation email to the customer for the given purchase.
      *
      * @param purchase The purchase for which the cancellation email should be sent.

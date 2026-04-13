@@ -170,6 +170,20 @@ public class MainBoundary implements Initializable {
 
     private DialogTool dialogLogIn;
     private static String loggedInUserId;
+
+    public static void setUserAfterRegistration(String userId) {
+        loggedInUserId = userId;
+        Platform.runLater(() -> {
+            if (SimpleChatClient.mainBoundary != null) {
+                if (loggedInEmployeeId != null) {
+                    SimpleChatClient.mainBoundary.updateEmployeeBasedOnRole(userId, loggedInEmployeeId);
+                } else {
+                    SimpleChatClient.mainBoundary.updateUserBasedOnRole(userId);
+                }
+                SimpleChatClient.mainBoundary.imgLog.setImage(new Image(Objects.requireNonNull(MainBoundary.class.getResourceAsStream(ConstantsPath.LOGOUT_ICON))));
+            }
+        });
+    }
     public static Employee.EmployeeType loggedInEmployeeId;
     private boolean isPasswordVisible = false;
 
@@ -337,13 +351,15 @@ public class MainBoundary implements Initializable {
     @Subscribe
     public void handleRegisterResponse(RegisteredUserMessage message) {
         Platform.runLater(() -> {
-            if (message.responseType == RegisteredUserMessage.ResponseType.USER_ADDED) {
-                NotificationsBuilder.create(NotificationType.SUCCESS,
-                        "Registration successful! You can now login with " + message.registeredUser.getId_number(), stckMain);
-                showLoginForm();
-            } else if (message.responseType == RegisteredUserMessage.ResponseType.USER_DID_NOT_ADDED) {
-                NotificationsBuilder.create(NotificationType.ERROR,
-                        "Phone number already registered. Please login instead.", stckMain);
+            if (registerForm.isVisible()) {
+                if (message.responseType == RegisteredUserMessage.ResponseType.USER_ADDED) {
+                    NotificationsBuilder.create(NotificationType.SUCCESS,
+                            "Registration successful! You can now login with " + message.registeredUser.getId_number(), stckMain);
+                    showLoginForm();
+                } else if (message.responseType == RegisteredUserMessage.ResponseType.USER_DID_NOT_ADDED) {
+                    NotificationsBuilder.create(NotificationType.ERROR,
+                            "Phone number already registered. Please login instead.", stckMain);
+                }
             }
         });
     }
@@ -593,6 +609,7 @@ public class MainBoundary implements Initializable {
         VBox vboxSide = (VBox) rootSideMenu.lookup("#vboxSide");
         vboxSide.getChildren().clear();
         vboxSide.getChildren().add(btnSpace);
+        vboxSide.getChildren().add(btnOrders); // Allow employees to see their personal orders
         switch (role) {
             case CONTENT_MANAGER:
                 vboxSide.getChildren().add(btnEditMovieList);

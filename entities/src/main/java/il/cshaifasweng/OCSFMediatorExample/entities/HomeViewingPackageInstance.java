@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @DiscriminatorValue("Home_Viewing_Package")
 public class HomeViewingPackageInstance extends Purchase {
 
-    @OneToOne
+    @ManyToOne
     private Movie movie;
 
     private LocalDateTime activationDate;

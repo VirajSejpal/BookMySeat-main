@@ -11,7 +11,7 @@ public class MovieInstance implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne
+    @ManyToOne
     private Movie movie;
 
     private LocalDateTime time;

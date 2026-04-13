@@ -429,8 +429,10 @@ public class TheaterPurchaseBoundary {
             Platform.runLater(() -> {
                 String purchaseValidation = cardNumberField.getText() + " " + expirationMonthCombo.getValue() + "/" + expirationYearCombo.getValue() + " " + cvvField.getText();
                 for (Seat seat : selectedSeats) {
+                    System.out.println("DEBUG Client: Purchasing ticket for " + currentMovieInstance.getMovie().getEnglishName() + " at price: " + currentMovieInstance.getMovie().getTheaterPrice());
                     PurchaseController.AddMovieTicket(LocalDateTime.now(), message.registeredUser, purchaseValidation, currentMovieInstance, seat);
                 }
+                MainBoundary.setUserAfterRegistration(message.registeredUser.getId_number());
                 stopTimer();
                 showConfirmation();
             });

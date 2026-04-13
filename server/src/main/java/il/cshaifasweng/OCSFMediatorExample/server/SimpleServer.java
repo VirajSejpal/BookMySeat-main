@@ -139,14 +139,14 @@ public class SimpleServer extends AbstractServer
 							(((SeatMessage) msg).requestType == SeatMessage.RequestType.SEATS_CANCELATION
 							|| ((SeatMessage) msg).requestType == SeatMessage.RequestType.SEATS_RESERVED))
 					{
-						sendToAllClients(new SeatStatusChangedEvent(((SeatMessage) msg).hallSeats, ((SeatMessage) msg).movieInstance.getId()));
+						sendToAllClientsExceptMe(new SeatStatusChangedEvent(((SeatMessage) msg).hallSeats, ((SeatMessage) msg).movieInstance.getId()), client);
 					}
 					else if (msg instanceof PurchaseMessage) {
 						if (((PurchaseMessage) msg).requestType == PurchaseMessage.RequestType.REMOVE_PURCHASE) {
 							if (((PurchaseMessage) msg).purchases.getFirst() instanceof MovieTicket) {
 								MovieTicket ticket = (MovieTicket) ((PurchaseMessage) msg).purchases.getFirst();
-								sendToAllClients(new SeatStatusChangedEvent(List.of(ticket.getSeat()), ticket.getMovieInstance().getId()));
-								System.out.println("Sent SeatStatusChangedEvent to all clients for MovieTicket removal.");
+								sendToAllClientsExceptMe(new SeatStatusChangedEvent(List.of(ticket.getSeat()), ticket.getMovieInstance().getId()), client);
+								System.out.println("Sent SeatStatusChangedEvent to all clients except me for MovieTicket removal.");
 							}
 						}
 					}

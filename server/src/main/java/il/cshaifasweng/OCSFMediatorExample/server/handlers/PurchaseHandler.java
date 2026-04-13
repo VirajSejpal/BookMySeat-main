@@ -58,6 +58,11 @@ public class PurchaseHandler extends MessageHandler
                 }
                 session.save(message.purchases.getFirst());
                 session.flush();
+                System.out.println("DEBUG: Saved purchase ID: " + message.purchases.getFirst().getId());
+                System.out.println("DEBUG: Price Paid: " + message.purchases.getFirst().getPricePaid());
+                if (message.purchases.getFirst().getOwner() != null) {
+                    System.out.println("DEBUG: Owner: " + message.purchases.getFirst().getOwner().getName() + " (" + message.purchases.getFirst().getOwner().getId_number() + ")");
+                }
 
                 // If the purchase is a HomeViewingPackageInstance, schedule link activation and email notification
                 if (message.purchases.getFirst() instanceof HomeViewingPackageInstance homeViewingPackage) {
@@ -152,7 +157,7 @@ public class PurchaseHandler extends MessageHandler
                     "from MovieTicket  where movieInstance.hall.theater.id = :theaterId", MovieTicket.class);
             movieTicketQuery.setParameter("theaterId", message.key);
             List<MovieTicket> movieTicketPurchases = movieTicketQuery.list();
-            message.purchases = (ArrayList<Purchase>) movieTicketQuery;
+            message.purchases = new ArrayList<>(movieTicketPurchases);
             message.responseType = PurchaseMessage.ResponseType.PURCHASES_LIST;
         } catch (Exception e) {
             e.printStackTrace();

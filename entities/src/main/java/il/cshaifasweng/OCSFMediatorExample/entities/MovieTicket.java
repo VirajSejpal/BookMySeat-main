@@ -7,10 +7,10 @@ import java.time.LocalDateTime;
 @DiscriminatorValue("movie_ticket")
 public class MovieTicket extends Purchase{
 
-    @OneToOne
+    @ManyToOne
     private MovieInstance movieInstance;
 
-    @OneToOne
+    @ManyToOne
     private Seat seat;
 
     public MovieTicket() {

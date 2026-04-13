@@ -204,11 +204,16 @@ public class MovieSmallBoundary {
             if (btnPayTheater != null) {
                 btnPayTheater.setDisable(newValue == null);
             }
+            if(newValue!=null)
+                time = LocalTime.from(LocalTime.parse(newValue, DateTimeFormatter.ofPattern("HH:mm")));
+        });
+
+        cmbHourHv.getSelectionModel().selectedItemProperty().addListener((options, oldValue, newValue) -> {
             if (btnPayHV != null) {
                 btnPayHV.setDisable(newValue == null);
             }
             if(newValue!=null)
-             time = LocalTime.from(LocalTime.parse(newValue, DateTimeFormatter.ofPattern("HH:mm")));
+                time = LocalTime.from(LocalTime.parse(newValue, DateTimeFormatter.ofPattern("HH:mm")));
         });
     }
 

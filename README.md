@@ -10,8 +10,8 @@
 
   <!-- Badges -->
   <p>
-    <img src="https://img.shields.io/github/languages/top/orishlach/Hasertia_Project?color=red" alt="language" />
-    <img src="https://img.shields.io/github/languages/code-size/orishlach/Hasertia_Project?color=informational" alt="code size" />
+    <img src="https://img.shields.io/github/languages/top/VirajSejpal/BookMySeat-main?color=red" alt="language" />
+    <img src="https://img.shields.io/github/languages/code-size/VirajSejpal/BookMySeat-main?color=informational" alt="code size" />
   </p>
 
    <!-- Links -->
@@ -28,13 +28,7 @@
 
 </div>
 
-## Team Members: 
-   1. Or Ishlach
-   2. Baruh Riss
-   3. Michelle Rempel
-   4. Baruh Krugliak
-   5. Omer Chernia
-   6. Omer Garabagi
+
 
 ## Setup & Installation
 
@@ -44,7 +38,7 @@
 
 **Clone the Repository**:
    ```bash
-   git clone https://github.com/orishlach/Hasertia_Project.git
+   git clone https://github.com/VirajSejpal/BookMySeat-main.git
    ```
 
 > [!NOTE]
