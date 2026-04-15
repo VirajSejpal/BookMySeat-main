@@ -38,12 +38,14 @@ public class SeatMessage extends Message
         SEATS_HAS_BEEN_CANCELED,
         SEATS_LIST,
         SEATS_IS_ALREADY_TAKEN,
+        SEAT_BROKEN_STATUS_CHANGED,
         MESSAGE_FAIL
     }
     public enum RequestType
     {
         SEATS_RESERVED,
         SEATS_CANCELATION,
-        GET_ALL_SEAT_BY_HALL
+        GET_ALL_SEAT_BY_HALL,
+        TOGGLE_SEAT_BROKEN_STATUS
     }
 }

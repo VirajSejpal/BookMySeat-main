@@ -24,4 +24,10 @@ public class SeatController {
         SeatMessage requestMessage = new SeatMessage(movieInstance, MessageType.REQUEST, SeatMessage.RequestType.SEATS_CANCELATION, seats);
         SimpleClient.getClient().sendRequest(requestMessage);
     }
+
+    public static void toggleSeatBrokenStatus(List<Seat> seats) {
+        SeatMessage requestMessage = new SeatMessage(0, MessageType.REQUEST, SeatMessage.RequestType.TOGGLE_SEAT_BROKEN_STATUS);
+        requestMessage.hallSeats = seats;
+        SimpleClient.getClient().sendRequest(requestMessage);
+    }
 }

@@ -30,12 +30,30 @@ public class SeatHandler extends MessageHandler
             case SEATS_RESERVED -> seat_reserved();
             case SEATS_CANCELATION -> seat_cancellation();
             case GET_ALL_SEAT_BY_HALL -> get_all_seat_by_hall();
+            case TOGGLE_SEAT_BROKEN_STATUS -> toggle_seat_broken_status();
         }
     }
     @Override
     public void setMessageTypeToResponse()
     {
         message.messageType= Message.MessageType.RESPONSE;
+    }
+
+    private void toggle_seat_broken_status() {
+        try {
+            for (Seat seat : message.hallSeats) {
+                Seat found = session.get(Seat.class, seat.getId());
+                if (found != null) {
+                    found.setBroken(!found.isBroken());
+                    session.update(found);
+                    session.flush();
+                }
+            }
+            message.responseType = SeatMessage.ResponseType.SEAT_BROKEN_STATUS_CHANGED;
+        } catch (Exception e) {
+            e.printStackTrace();
+            message.responseType = SeatMessage.ResponseType.MESSAGE_FAIL;
+        }
     }
 
     private void seat_reserved() {

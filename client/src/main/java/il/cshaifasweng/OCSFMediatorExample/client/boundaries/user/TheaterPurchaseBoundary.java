@@ -237,6 +237,11 @@ public class TheaterPurchaseBoundary {
                 seatButton.setStyle("-fx-background-color:  #838f97;");
                 seatButton.setDisable(true);
             }
+            else if (seat.isBroken()){
+                seatButton.setStyle("-fx-background-color: #3b3b3b; -fx-text-fill: white;");
+                seatButton.setDisable(true);
+                seatButton.setText("X");
+            }
             else
                 seatButton.setStyle("-fx-background-color: #4CAF50FF;");
 

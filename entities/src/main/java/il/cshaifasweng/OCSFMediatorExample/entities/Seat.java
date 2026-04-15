@@ -74,11 +74,22 @@ public class Seat implements Serializable {
     }
 
 
+    @Column(nullable = false)
+    private boolean isBroken = false;
+
     public void setHall(Hall hall) {
         this.hall = hall;
     }
 
     public Hall getHall() {
         return hall;
+    }
+
+    public boolean isBroken() {
+        return isBroken;
+    }
+
+    public void setBroken(boolean broken) {
+        isBroken = broken;
     }
 }

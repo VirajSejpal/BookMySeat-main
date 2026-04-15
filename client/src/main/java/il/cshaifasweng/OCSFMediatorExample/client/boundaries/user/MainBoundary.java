@@ -97,6 +97,9 @@ public class MainBoundary implements Initializable {
     private Button btnReports;
 
     @FXML
+    private Button btnManageTheater;
+
+    @FXML
     private Button btnSettings;
 
     @FXML
@@ -152,6 +155,9 @@ public class MainBoundary implements Initializable {
 
     @FXML
     private AnchorPane tooltipReports;
+
+    @FXML
+    private AnchorPane tooltipManageTheater;
 
     @FXML
     private ToggleGroup userTypeToggleGroup;
@@ -291,6 +297,11 @@ public class MainBoundary implements Initializable {
     }
 
     @FXML
+    private void manageTheaterWindows(ActionEvent event) {
+        showFXMLWindows(ConstantsPath.THEATER_MANAGER_VIEW);
+    }
+
+    @FXML
     private void MEWindows(ActionEvent event) {
         showFXMLWindows(ConstantsPath.ME_PURCHASE_VIEW);
     }
@@ -421,6 +432,7 @@ public class MainBoundary implements Initializable {
         Animations.tooltip(btnPriceChange, tooltipPrice);
         Animations.tooltip(btnComplaints, tooltipComplaints);
         Animations.tooltip(btnReports, tooltipReports);
+        Animations.tooltip(btnManageTheater, tooltipManageTheater);
     }
 
     private static Object currentController;
@@ -620,6 +632,7 @@ public class MainBoundary implements Initializable {
                 break;
             case THEATER_MANAGER:
                 vboxSide.getChildren().add(btnReports);
+                vboxSide.getChildren().add(btnManageTheater);
                 break;
             case COMPANY_MANAGER:
                 vboxSide.getChildren().add(btnReports);

@@ -33,8 +33,8 @@ public class TheaterHandler extends MessageHandler
 
     private void get_theater_by_manager_id() {
         try {
-            // Create an HQL query to fetch all theaters
-            Query<Theater> query = session.createQuery("FROM Theater WHERE manager.id_number =:id ", Theater.class);
+            // Create an HQL query to fetch the theater and its halls
+            Query<Theater> query = session.createQuery("SELECT DISTINCT t FROM Theater t LEFT JOIN FETCH t.halls WHERE t.manager.id_number = :id ", Theater.class);
             query.setParameter("id", message.managerID);
 
             // Execute the query and get the result list

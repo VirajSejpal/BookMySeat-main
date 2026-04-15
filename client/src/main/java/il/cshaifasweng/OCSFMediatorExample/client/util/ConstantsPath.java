@@ -17,6 +17,7 @@ public class ConstantsPath {
     public static final String REGISTER_USER_PACKAGE = BOUNDARIES_PACKAGE + "registeredUser/";
     public static final String USER_PACKAGE = BOUNDARIES_PACKAGE + "user/";
     public static final String COMPANY_MANAGER_PACKAGE = BOUNDARIES_PACKAGE + "companyManager/";
+    public static final String THEATER_MANAGER_PACKAGE = BOUNDARIES_PACKAGE + "theaterManager/";
 
     /* USER_VIEWS */
     public static final String START_VIEW = USER_PACKAGE + "StartView.fxml";
@@ -49,6 +50,7 @@ public class ConstantsPath {
 
     /* REPORTS_VIEWS */
     public static final String COMPANY_MANAGER_VIEW = REPORTS_PACKAGE + "ReportsView.fxml";
+    public static final String THEATER_MANAGER_VIEW = THEATER_MANAGER_PACKAGE + "ManageTheaterView.fxml";
 
     public static final String ICON_PACKAGE = SOURCE_PACKAGE + "icons/";
     public static final String GENERAL_PACKAGE = ICON_PACKAGE + "general/";
